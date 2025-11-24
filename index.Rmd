@@ -26,8 +26,8 @@ maintitlepage:
 # ... or a PDF cover
 pdftitlepage: images/cover.pdf
 # Language
-lang: cs
-otherlangs: [en]
+lang: en
+otherlangs: [cs]
 # Bibliography
 bibliography: references.bib
 # Citation style in HTML
