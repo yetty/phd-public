@@ -2,7 +2,7 @@
 title: "Judovo ověřování historického myšlení"
 author: "Juda Kaleta"
 date: "`r Sys.Date()`"
-url: https://yetty.github.io/phd-public/
+url: https://phd.judakaleta.cz
 github-repo: yetty/phd-public
 description: "Veřejné sdílení předběných zjištění, myšlenek a materiálů k diskuzi v rámci mého doktorského studia."
 cover-image: "images/logo.png"
