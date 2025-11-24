@@ -48,46 +48,6 @@
 % Strikeout
 
 % Necessary for code chunks
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % Listings package
 
@@ -462,41 +422,29 @@ Leave an empty line for line breaks.}
 \chapter*{Úvod}\label{uxfavod}
 \addcontentsline{toc}{chapter}{Úvod}
 
-This document allows you to create a book in PDF format (and ePub format) at the same time as an HTML version to be published on the web.
-The syntax is that of \textbf{Markdown} with some extensions.
+Toto je veřejné sdílení předběžných zjištění, myšlenek a materiálů k diskuzi v rámci mého doktorského studia,
+ve kterém se zaměřuji na problematiku historického myšlení a jeho ověřování ve výuce dějepisu.
 
-The \textbf{bookdown} package must be installed from CRAN or GitHub:
+Cíle tohoto webu jsou následující:
 
-\scriptsize
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Protože samotná dizertace i průběžné výstupy budou převážně v angličtině, tento web by měl zjištění zprostředkovat i českému čtenáři.
+\item
+  Zároveň ve shodě s principy open science se budu snažit zprostředkovávat průběžný stav výzkumu -- a otevřít ho tak přípomínkám, dotazům a návrhům na vylepšení.
+\item
+  V neposlední řádě chci touto cestou vrátit svůj dluh zapojeným učitelům a sdílet s nimi materiály, které by sami mohli adaptovat v hodinách.
+\end{enumerate}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github(\textquotesingle{}rstudio/bookdown\textquotesingle{})}
-\end{Highlighting}
-\end{Shaded}
+Z principu je tento web \emph{work-in-progress} - jeho obsah se bude proměňovat. Veškeré změny jsou evidovány v logu \href{https://github.com/yetty/phd-public}{Github repozitáře}.
 
-\normalsize
+Obsah neprochází žádnou formální kontrolou, ani po stránce obsahové, ani jazykové. Pokud narazíte na (třeba jazykovou) chybu, alespoň víte, že nečtete žádný výplod umělé inteligence.
 
-The book is organized in chapters.
-Each chapter is an Rmd file, whose name normally begins with its number (e.g.~\texttt{01-intro.Rmd}).
-All Rmd files in the project folder are actually treated as chapters, sorted by filename.
-The index.Rmd file is special: it contains the document header and the first chapter.
+V každém případě mi můžete dát vědět na mail \href{mailto:juda.kaleta@gmail.com}{\nolinkurl{juda.kaleta@gmail.com}}.
 
-This first chapter is placed in the foreword of the printed book: it should not be numbered (hence the \texttt{\{-\}} code next to the title) in the HTML version.
-It must end with the LaTeX command \texttt{\textbackslash{}mainmatter} which marks the beginning of the body of the book.
-
-The outline levels start with \texttt{\#} for chapters (only one per file), \texttt{\#\#} for sections, etc.
-
-Compilation in PDF format is done by XeLaTeX, which must be installed.
-
-While writing, it is strongly advised to create only the HTML file, which is much faster than a LaTeX compilation.
-Each chapter can be viewed very quickly by clicking on the \emph{Knit} button above the source window.
-The entire book is created by clicking on the \emph{Build Book} button in the RStudio \emph{Build} window.
-The button's drop-down list allows you to create all documents or limit yourself to one format.
-
-\mainmatter
+Díky a ať je vám obsah k užitku.
 
 \chapter{HPT a extremismus}\label{hpt-a-extremismus}
 
