@@ -1,6 +1,84 @@
 # HPT a extremismus
 
-Jedním z existujících konceptů historického myšlení jsou tzv. dobové perspektivy
-(*historical perspectives*)...
+Existující modely historického myšlení pracují s konceptem tzv. dobových perspektiv (*historical perspectives*). Projekt Dějepis+ je rámoval otázkou *"Jak lépe porozumět lidem, kteří žili v minulosti?"* [@Cinatl2021Metodika p. 10]. Jak ale, že žákům se porozumět lidem v minulosti daří?
 
-## Plán výzkumu
+Jedním z nástrojů, který se o to pokouší, je tzv. Historical Perspective Taking (HPT) dotazník [@Hartmann_Hasselhorn2008Historical]. Má solidní empirické podložení a úspěšně ho adaptovaly i další výzkumy [@Huijgen_et_al2014Testing; @Huijgen_et_al2017Toward]. 
+
+Zdá se mi ale, že má jeden zásadní nedostatek – nijak nezohledňuje současné perspektivy žáků. Jinými slovy: žák, který dosáhne lepšího výsledku v HPT, nemusí ve skutečnosti vykazovat lepší porozumění lidem v minulosti. Může výsledku dosáhnout proto, že nepřejímá implicitní předpoklad současné perspektivy HPT – tedy že současná perspektiva všech žáků je *"nacismus byl špatný"*. 
+
+Jak výsledky ovlivňují právě názory (a perspektiva) žáka, bych chtěl ověřit následujícím výzkumem.
+
+## Plán a cíle výzkumu
+
+**Hlavní cíl:** Ověřit, jestli a jak moc mohou dnešní postoje žáků (příklon k autoritarismu, normalizace nacismu) ovlivnit výsledky ve validovaném nástroji na měření historických perspektiv – tedy budit dojem dobrého historického myšlení jen proto, že jejich názory souzní s názory tehdejších aktérů.
+
+Kromě toho by výzkum měl čéskym učitelům přispět
+
+- ověřeným českým překladem HPT dotazníku;
+- ověřeným nástroje pro ověření současných perspektiv žáků (FR-LF, KSA-3, SDR-5)
+
+Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejich  žáci jsou jak se schopností zaujmout dobové perspektivy, tak ohledně příklonu k různým autoritářským postojům – a v konečném důsledku tedy pomoci lépe přizpůsobit výuku moderních a soudobých dějin potřebám konkrétní třídy.
+
+### Jak to bude prakticky probíhat
+
+**Kdo:** 9. ročník ZŠ + všechny ročníky SŠ
+
+**Čas:** 20-30 minut čistého času
+
+**Jednotlivé části:**
+
+1. **Sběr základních údajů:** dotazník je anonymní, žáci pouze zadají svou třídu, pohlaví a poslední známku z dějepisu.
+2. **Mini-test znalostí (10 položek)** – pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. [@Huijgen_et_al2017Toward]
+3. **Úkol na dobové perspektivy** – český překlad ověřeného nástroje, který je postaven na fiktiní situaci z meziválečného Německa. [@Hartmann_Hasselhorn2008Historical]
+4. **Krátký anonymní dotazník postojů** – obsahuje náhodně seřazené položky tří nástrojů:
+	- FR-LF (mini verze o 6 položkách) - měří postoje k autoritářské vládě a zlehčování nacismu [@Decker_et_al2013Rechtsextremismus]
+	- KSA-3 – měří ultra-pravicovou názorovou orientaci [@Beierlein_et_al2014Die_Kurzskala;@Nießen_et_al2019An_English]
+	- SDR-5 – měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře [@Hays_et_al1989A_Five]
+
+
+**Co bude dělat učitel?**
+
+- zašlete odkaz na vyplnění dotazníku (elektronicky) *nebo* rozdáte vytištěné dotazníky v papírové variantě
+- dohlédnete na klidný průběh a odevzdání
+
+**Etika a bezpečí**
+
+- Účast je **dobrovolná a anonymní**, žák může vyplňování odmítnout – nenuťte ho, prosím
+- Pokud by některé otázky vyvolaly reakci žáků, doporučuji zařadit krátký bezpečný prostor pro reflexi a sdilení
+
+
+### Co jako jako zapojený učitel dostanu?
+
+1. **Souhrnný report za třídu/školu**:
+	- jaké žáci prokázali schopnosti zaujmout dobovou perspektivu
+	- jaký se u nich projevil vztah mezi znalostmi a schopností zaujmout dobovou perspektivu
+	- případné náznaky nežádoucího "přilepšení" výkonu na základě postojů žáku
+2. **Doporučení do výuky**:
+	- tipy na základě výzkumů, jak prohlubovat schopnost žáků zaujmout dobové perspektivy;
+	- tipy, jak vybírat kontext, který žákům pomůže (časový, prostorový, socio-politický, socio-kulturní)
+
+## Předpokládaná zjištění
+
+### Scénář A – potvrzení vlivu postojů žáka
+
+Pracovní hypotéza je, že příklon žáka k extremistickým postojům může kontaminovat výsledky testu na schopnost zaujmout dobové perspektivy. Pokud se to potvrdí, bude to pro nás:
+
+1. signál, že při výuce dějepisu je důležité s postoji žáka pracovat a vědomě je reflektovat, protože mohou ovlivnit nejen jeho přemýšlení o minulosti, ale i to, jak jeho výstupy působí skrytě na učitele;
+2. solidní základ pro přemýslení o tom, jak konstruovat ověřování schopnosti zaujmout dobové perspektivy, které by nebylo náchylné na ovlivnění postoji žáka.
+
+### Scénář B – vliv postojů žáka se neprokáže
+
+Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to trochu zklamání a překvapení. Nicméně i to bude cenné zjištění – a hlavně, zůstane nám validovaný a funkční nástroj, pomocí kterého bude možné schopnost žáků zaujmout dobovou perspektivu ověřovat.
+
+
+### FAQ
+
+**Není to politický průzkum?** – Ne. Nezajímají mne přímo politické postoje žáků, ale to, jak mohou ovlivnit (kontaminovat) ověřování schopnosti zaujmout dobovou prespektivu.
+
+**Proč se pracuje s "fiktivní" situací bez primárního pramene?** – Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.  
+
+## Materiály
+
+- [Stručný výzkumný záměr (anglicky)](https://docs.google.com/document/d/1dVALx38nJEfqsNkWrgBRTvNikQI5fTJ3-S9JJCXsd5Q/edit?usp=sharing)
+- [Překlad HPT dotazníku do češtiny](https://docs.google.com/document/d/1MdAjadyAtGVR-gfEgizH5-RXEBgc0I-cpo3qNG2VAtY/edit?usp=sharing)
+- [Adaptace FR-LF + KSA + SDR dotazníku do češtiny](https://docs.google.com/document/d/1qkEgybQVgHTRuyUbPhlDYg0_SjQLAxq9gkS4jzUj5e8/edit?usp=sharing)

@@ -10,15 +10,23 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book: default
 bookdown::gitbook:
+  toc_depth: 1
   css: style.css
   config:
     sharing:
-      github: yes
+      facebook: no
+      twitter: no
+      linkedin: no
+      weibo: false
+      instapaper: no
+      vk: no
+      all: no
     toc:
+      collapse: section
       before: |
         <li><a href="./">Judovo ověřování historického myšlení</a></li>
       after: |
-        <li><a href="https://github.com/yetty/phd-public" target="blank">Published with bookdown</a></li>
+        <li style="padding: 10px; font-size: 80%;">Veškerý obsah tohoto webu je publikován pod licencí <a href="https://creativecommons.org/licenses/by/4.0/" style="display: inline; margin: 0; padding: 0;">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></li>
     download: "pdf"
 bookdown::bs4_book:
   css: bs4_style.css
