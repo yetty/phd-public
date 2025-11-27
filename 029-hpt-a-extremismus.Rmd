@@ -23,12 +23,12 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 
 **Kdo:** 9. ročník ZŠ + všechny ročníky SŠ
 
-**Čas:** 20-30 minut čistého času
+**Čas:** 15-25 minut čistého času
 
 **Jednotlivé části:**
 
 1. **Sběr základních údajů:** dotazník je anonymní, žáci pouze zadají svou třídu, pohlaví a poslední známku z dějepisu.
-2. **Mini-test znalostí (10 položek)** – pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. [@Huijgen_et_al2017Toward]
+2. **Mini-test znalostí (6 položek)** – pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. [@Huijgen_et_al2017Toward]
 3. **Úkol na dobové perspektivy** – český překlad ověřeného nástroje, který je postaven na fiktiní situaci z meziválečného Německa. [@Hartmann_Hasselhorn2008Historical]
 4. **Krátký anonymní dotazník postojů** – obsahuje náhodně seřazené položky tří nástrojů:
 	- FR-LF (mini verze o 6 položkách) - měří postoje k autoritářské vládě a zlehčování nacismu [@Decker_et_al2013Rechtsextremismus]
@@ -77,8 +77,16 @@ Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to troch
 
 **Proč se pracuje s "fiktivní" situací bez primárního pramene?** – Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.  
 
+**Můžu úlohy a dotazníky nějak připomínkovat?** – Rozhodně! Pokud máte návrh na vylepšení překladu nebo formulace, napište mi na [juda.kaleta@gmail.com](mailto:juda.kaleta@gmail.com). Zároveň ale platí, že se snažím být věrný originálu – takže vylepšení, které se budou příliš vzdalovat od původní verze, sice ocením a poznamenám si, ale spíše nebudu moci začlenit.
+
 ## Materiály
 
 - [Stručný výzkumný záměr (anglicky)](https://docs.google.com/document/d/1dVALx38nJEfqsNkWrgBRTvNikQI5fTJ3-S9JJCXsd5Q/edit?usp=sharing)
-- [Překlad HPT dotazníku do češtiny](https://docs.google.com/document/d/1MdAjadyAtGVR-gfEgizH5-RXEBgc0I-cpo3qNG2VAtY/edit?usp=sharing)
-- [Adaptace FR-LF + KSA + SDR dotazníku do češtiny](https://docs.google.com/document/d/1qkEgybQVgHTRuyUbPhlDYg0_SjQLAxq9gkS4jzUj5e8/edit?usp=sharing)
+- [Mini test znalostí](https://docs.google.com/document/d/10geollT853sY61kzo2I76jjGK4XT5bYbCAtHSZfF6s8/edit?usp=sharing) (není určen pro sdílení se žáky)
+- [Překlad HPT dotazníku do češtiny](https://docs.google.com/document/d/1MdAjadyAtGVR-gfEgizH5-RXEBgc0I-cpo3qNG2VAtY/edit?usp=sharing) (není určen k sdílení se žáky)
+- [Adaptace FR-LF + KSA + SDR dotazníku do češtiny](https://docs.google.com/document/d/1qkEgybQVgHTRuyUbPhlDYg0_SjQLAxq9gkS4jzUj5e8/edit?usp=sharing) (není určeno ke sdílení se žáky)
+- [Google Form šablona celého dotazníku ke kopírování](https://docs.google.com/forms/d/1cL_q5lPQ6lpoHRFE_gyXv6z8oWWou6jrpHVk1lYWTsQ/copy) (vyžaduje Google účet) 
+	- po vytvoření kopie **je určeno k online zadávání žákům**
+- [Papírová verze k tisku (Google Docs)](https://docs.google.com/document/d/1oEAfcp7fBjfRQW56GQSGQ9JG2QocuZivh3VRTWBxK6U/edit?usp=sharing) - **je určeno k zadávání žákům**
+	- [Papírová verze k tisku (PDF, verze na 1 list)](https://drive.google.com/file/d/1I2cWLWs26P0-rOVmPBtnIV9M_F-htyk3/view?usp=sharing)
+	- [Papírová verze k tisku (PDF, verze na 2 listy)](https://drive.google.com/file/d/1IZKhkWbS8PiEFHFpI_FTiZxQ3RfPY8Vw/view?usp=sharing)
