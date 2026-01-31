@@ -8,7 +8,9 @@ Zdá se mi ale, že má jeden zásadní nedostatek – nijak nezohledňuje souč
 
 Jak výsledky ovlivňují právě názory (a perspektiva) žáka, bych chtěl ověřit následujícím výzkumem.
 
-## Plán a cíle výzkumu
+## Plánovaný výzkum
+
+### Plán a cíle výzkumu
 
 **Hlavní cíl:** Ověřit, jestli a jak moc mohou dnešní postoje žáků (příklon k autoritarismu, normalizace nacismu) ovlivnit výsledky ve validovaném nástroji na měření historických perspektiv – tedy budit dojem dobrého historického myšlení jen proto, že jejich názory souzní s názory tehdejších aktérů.
 
@@ -19,7 +21,7 @@ Kromě toho by výzkum měl čéskym učitelům přispět
 
 Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejich  žáci jsou jak se schopností zaujmout dobové perspektivy, tak ohledně příklonu k různým autoritářským postojům – a v konečném důsledku tedy pomoci lépe přizpůsobit výuku moderních a soudobých dějin potřebám konkrétní třídy.
 
-### Jak to bude prakticky probíhat
+#### Jak to bude prakticky probíhat
 
 **Kdo:** 9. ročník ZŠ + všechny ročníky SŠ
 
@@ -47,7 +49,7 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 - Pokud by některé otázky vyvolaly reakci žáků, doporučuji zařadit krátký bezpečný prostor pro reflexi a sdilení
 
 
-### Co jako jako zapojený učitel dostanu?
+#### Co jako jako zapojený učitel dostanu?
 
 1. **Souhrnný report za třídu/školu**:
 	- jaké žáci prokázali schopnosti zaujmout dobovou perspektivu
@@ -57,27 +59,309 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 	- tipy na základě výzkumů, jak prohlubovat schopnost žáků zaujmout dobové perspektivy;
 	- tipy, jak vybírat kontext, který žákům pomůže (časový, prostorový, socio-politický, socio-kulturní)
 
-## Předpokládaná zjištění
+### Předpokládaná zjištění
 
-### Scénář A – potvrzení vlivu postojů žáka
+#### Scénář A – potvrzení vlivu postojů žáka
 
 Pracovní hypotéza je, že příklon žáka k extremistickým postojům může kontaminovat výsledky testu na schopnost zaujmout dobové perspektivy. Pokud se to potvrdí, bude to pro nás:
 
 1. signál, že při výuce dějepisu je důležité s postoji žáka pracovat a vědomě je reflektovat, protože mohou ovlivnit nejen jeho přemýšlení o minulosti, ale i to, jak jeho výstupy působí skrytě na učitele;
 2. solidní základ pro přemýslení o tom, jak konstruovat ověřování schopnosti zaujmout dobové perspektivy, které by nebylo náchylné na ovlivnění postoji žáka.
 
-### Scénář B – vliv postojů žáka se neprokáže
+#### Scénář B – vliv postojů žáka se neprokáže
 
 Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to trochu zklamání a překvapení. Nicméně i to bude cenné zjištění – a hlavně, zůstane nám validovaný a funkční nástroj, pomocí kterého bude možné schopnost žáků zaujmout dobovou perspektivu ověřovat.
 
 
-### FAQ
+#### FAQ pro učitele
 
 **Není to politický průzkum?** – Ne. Nezajímají mne přímo politické postoje žáků, ale to, jak mohou ovlivnit (kontaminovat) ověřování schopnosti zaujmout dobovou prespektivu.
 
 **Proč se pracuje s "fiktivní" situací bez primárního pramene?** – Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.  
 
 **Můžu úlohy a dotazníky nějak připomínkovat?** – Rozhodně! Pokud máte návrh na vylepšení překladu nebo formulace, napište mi na [juda.kaleta@gmail.com](mailto:juda.kaleta@gmail.com). Zároveň ale platí, že se snažím být věrný originálu – takže vylepšení, které se budou příliš vzdalovat od původní verze, sice ocením a poznamenám si, ale spíše nebudu moci začlenit.
+
+
+
+## Výsledky výzkumu
+
+V dějepise se často snažíme žákům pomoci porozumět lidem v minulosti v jejich dobovém kontextu, nikoli je hodnotit dnešníma očima. Tuto schopnost se výzkumně snaží zachytit test Historical Perspective Taking (HPT). Jenže...
+
+:::{#pythbox .redbox title="Jaká byla otázka?"}
+Nemůže žák dosáhnout dobrého výsledku v testu dobových perspektiv spíše proto, že jeho **současné postoje souzní s postoji historických aktérů**, než proto, že skutečně dobře historicky uvažuje?
+:::
+
+Konkrétně: nemohou zda autoritářské nebo pro-nacistické postoje „vylepšit“ výsledek v úloze zaměřené na porozumění meziválečnému Německu?
+
+:::{#pythbox .greenbox title="Co jsme zjistili? (shrnutí)"}
+**Ne, předpoklad, že žáci s autoritářskými postoji dosáhnou lepších výsledků v HPT testu, se nepotvrdil.** Korelace mezi postoji a výsledky v HPT byla velmi slabá až nulová. To znamená, že výsledky v HPT testu nejsou kontaminovány současnými postoji žáků. Dobrá zpráva pro učitele dějepisu - výsledky v HPT testu skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. **Můžete ho tedy bez obav používat jako nástroj pro diagnostiku historického myšlení vašich žáků.**
+:::
+
+### Jak výzkum probíhal?
+
+Výzkum proběhl v prosinci 2025 a zúčastnili se ho žáci 9. ročníků ZŠ a všech ročníků SŠ z různých typů škol a regionů ČR. Cílem při tom nebyla reprezentativnost (výsledky tedy nic neříkají o tom, jak jsou na tom "čeští žáci" obecně), ale jen zjištění, zda se potvrdí hypotéza, že autoritářské postoje žáků mohou ovlivnit výsledky v HPT testu.
+
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(psych)
+library(patchwork)
+```
+
+```{r load_data, echo=FALSE}
+hpt_data <- readRDS("data/029-hpt-a-extremismus.RDS")
+
+bench_hpt <- tibble::tribble(
+  ~studie,                     ~M,    ~SD,
+  "Huijgen et al. (2017)",      3.20,  0.37
+) |>
+  mutate(
+    low  = M - SD,
+    high = M + SD
+  )
+```
+
+Celkem se výzkumu zúčastnilo `r hpt_data %>% nrow()` žáků z `r hpt_data %>% distinct(school_id) %>% nrow()` škol (`r hpt_data %>% distinct(class_id) %>% nrow()` tříd).
+
+```{r compute_class_sizes, echo=FALSE, message=FALSE, warning=FALSE}
+class_sizes <- hpt_data %>%
+  group_by(school_id, class_id) %>%
+  summarise(n = n()) %>%
+  ungroup()
+```
+
+#### Podrobnosti o vzorku žáků
+
+```{r demographics_plots, echo=FALSE, message=FALSE, warning=FALSE}
+p_gender <- ggplot(hpt_data, aes(x = gender)) +
+  geom_bar() +
+  scale_x_discrete(
+    labels = c(
+      M = "Muž",
+      F = "Žena",
+      O = "Jiné / neuvedeno"
+    )
+  ) +
+  labs(
+    title = "Pohlaví",
+    x = "Pohlaví",
+    y = "Počet žáků"
+  )
+
+p_grade <- ggplot(hpt_data, aes(x = history_grade)) +
+  geom_bar() +
+  labs(
+    title = "Poslední známka z dějepisu",
+    x = "Známka",
+    y = "Počet žáků"
+  )
+
+p_school_type <- ggplot(hpt_data, aes(x = school_type)) +
+  geom_bar() +
+    scale_x_discrete(
+    labels = c(
+      public = "státní",
+      private = "soukromá",
+      church = "církevní"
+    )
+  ) +
+  labs(
+    title = "Typ školy podle zřizovatele",
+    x = "Typ školy",
+    y = "Počet žáků"
+  )
+
+p_school_level <- ggplot(hpt_data, aes(x = school_level)) +
+  geom_bar() +
+  scale_x_discrete(
+    labels = c(
+      lower_secondary = "2. stupeň ZŠ",
+      upper_secondary = "SŠ"
+    )
+  ) +
+  labs(
+    title = "Stupeň školy",
+    x = "Stupeň školy",
+    y = "Počet žáků"
+  )
+
+class_sizes <- hpt_data |>
+  count(class_id, name = "pocet_zaku")
+
+p_class_size <- ggplot(class_sizes, aes(x = pocet_zaku)) +
+  geom_histogram(bins = 5) +
+  labs(
+    title = "Velikost tříd",
+    x = "Počet žáků ve třídě",
+    y = "Počet tříd"
+  )
+
+(p_gender + p_grade) /
+(p_school_type + p_school_level) /
+p_class_size +
+  plot_annotation(
+    title = "Popis vzorku",
+    theme = theme(plot.title = element_text(face = "bold"))
+  )
+
+```
+
+#### Co žáci vyplňovali?
+
+Žáci vyplňovali dotazník v délce přibližně 20-30 minut pomocí Google Forms (online). Dotazník obsahoval:
+
+1. **Základní údaje** -- konkrétně třída, pohlaví a poslední známka z dějepisu.
+2. **Mini-test znalostí** -- 6 otázek na základní znalosti o meziválečném Německu pro kontrolu vlivu znalostí na výsledky HPT.
+3. **HPT dotazník** -- český překlad ověřeného nástroje na měření schopnosti zaujmout dobové perspektivy [@Hartmann_Hasselhorn2008Historical].
+4. **Dotazník postojů** -- obsahoval položky z následujících nástrojů:
+    - FR-LF (mini verze o 6 položkách) -- měří postoje k autoritářské vládě a zlehčování nacismu [@Decker_et_al2013Rechtsextremismus]
+    - KSA-3 -- měří ultra-pravicovou názorovou orientaci [@Beierlein_et_al2014Die_Kurzskala;@Nießen_et_al2019An_English]
+    - SDR-5 -- měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře [@Hays_et_al1989A_Five]
+
+Všechny nástroje byly přeloženy do češtiny a zpětně přeloženy do angličtiny pro ověření kvality překladu. HPT dotazník byl navíc zkontrolován nezávislým učitelem dějepisu s dostatečnou praxí a znalostí modelů historického myšlení. Všechny dotazníky níže v sekci Materiály.
+
+### Výsledky
+
+**Hlavní výsledek** -- nepotvrdilo se, že by příklon žáků k autoritářským nebo extremistickým postojům zlepšoval výsledky v HPT testu. 
+
+- Vztah mezi postoji žáků a jejich výsledky v HPT byl **velmi slabý**.
+- Žáci s autoritářskými postoji nedosahovali statisticky lepším výsledků, spíše data naznačovala opak (i když velmi slabě).
+
+**Závěr?** Výsledky v HPT testu tedy skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. To je dobrá zpráva pro učitele -- můžete HPT test použít pro měření, jestli žák dokáže zaujmout dobovou perspektivu a nemusíte se moc bát, že by žáci "ošidili" test svými postoji.
+
+#### Podrobnější výsledky
+
+Rozložení výsledků HPT zhruba odpovídá normálnímu rozložení, které se dalo očekávat. Celkově žáci dosahovali o něco nižších výsledků než v původní studii [@Huijgen_et_al2017Toward], ale rozdíl nebyl velký. Vliv na to mělo i to, že na rozdíl od nizozemské studie se výzkumu zúčastnili i žáci 9. ročníků ZŠ, učilišť a středních odborných škol. V nizozemskě studii šlo pouze o žáky z ekvivalentu gymnázií.
+
+Zároveň ale platí, že zapojení čeští učitelé se rekrutovali především z těch, kteří mají zájem o moderní dějiny a výuku dějepisu, takže nelze vyloučit, že jejich žáci mohou být nadprůměrní i v tomto ohledu. Opakuji, že výzkum ale nebyl zaměřen na reprezentativnost, ale jen na ověření hlavní hypotézy.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+hpt_desc <- hpt_data |>
+  summarise(
+    Průměr   = mean(HPT_TOT9, na.rm = TRUE),
+    Rozptyl = var(HPT_TOT9, na.rm = TRUE),
+    SD      = sd(HPT_TOT9, na.rm = TRUE),
+    Minimum = min(HPT_TOT9, na.rm = TRUE),
+    Maximum = max(HPT_TOT9, na.rm = TRUE)
+  ) |>
+  round(2)
+
+kableExtra::kbl(
+  hpt_desc,
+  caption = "Základní deskriptivní statistiky celkového skóre HPT",
+  booktabs = TRUE,
+  longtable = TRUE
+) |>
+  kableExtra::kable_styling(
+    bootstrap_options = "striped",
+    full_width = FALSE
+  )
+```
+
+
+```{r hpt_histogram, echo=FALSE, message=FALSE, warning=FALSE}
+ggplot(hpt_data, aes(x = HPT_TOT9)) +
+  geom_histogram(bins = 20) +
+  # ±1 SD pásmo (transparentní obdélník přes celý y-rozsah)
+  geom_rect(
+    data = bench_hpt,
+    aes(xmin = low, xmax = high, ymin = -Inf, ymax = Inf),
+    inherit.aes = FALSE,
+    alpha = 0.12
+  ) +
+  # průměr studie (svislá čára)
+  geom_vline(
+    data = bench_hpt,
+    aes(xintercept = M),
+    inherit.aes = FALSE,
+    linewidth = 1
+  ) +
+  # popisek u čáry
+  geom_text(
+    data = bench_hpt,
+    aes(x = M, y = Inf, label = paste0(studie, "\nM=", M, ", SD=", SD)),
+    inherit.aes = FALSE,
+    vjust = 1.2,
+    hjust = -0.05,
+    size = 3
+  ) +
+  labs(
+    title = "Rozložení celkového skóre HPT (se srovnáním s předchozími studiemi)",
+    x = "HPT (celkové skóre)",
+    y = "Počet žáků"
+  )
+
+```
+
+Vztah mezi postoji a HPT je znázorněn na následujícím grafu lineární regresní přímkou. Jak je vidět, vztah je velmi slabý. Tento výsledek byl potvrzen složitějšími statistickými modely (lineární smíšené modely s náhodnými efekty pro třídy a školy), které ale zde neuvádím pro přehlednost. Zájemcům rád poskytnu kompletní analýzy, v budoucnu se snad objeví i v nějakém odborném článku.
+
+Ve vztahu k testu znalostí se potvrdily výsledky předchozích studií, že znalosti se na výsledcích HPT podílejí zhruba z 20 %. Žáci s lepšími znalostmi dosahovali i lepších výsledků v HPT testu.
+
+```{r hpt_results, echo=FALSE, message=FALSE, warning=FALSE}
+ggplot(hpt_data %>% mutate(FRLF = rowMeans(select(., RD1:RD3, NS1:NS3), na.rm = TRUE)), aes(x = FRLF, y = HPT_TOT9)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(
+    title = "Vztah mezi ideologickými postoji a HPT",
+    subtitle = "Scatter plot s lineární regresní přímkou",
+    x = "Ideologické postoje (FR-LF mini, vyšší = více autoritářské)",
+    y = "Historical Perspective Taking (HPT – celkové skóre)"
+  ) +
+  theme_minimal()
+```
+
+#### Korelační matice
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+dat_corr <- hpt_data |>
+  mutate(
+    FRLF      = rowMeans(pick(RD1:RD3, NS1:NS3), na.rm = TRUE),
+    KN        = rowMeans(pick(KN1:KN6), na.rm = TRUE)
+  ) |>
+  select(HPT_TOT9, HPT_CTX6, HPT_POP_rev, HPT_ROA, HPT_CONT, FRLF, KN)
+
+# Korelační matice
+cor_mat <- cor(dat_corr, use = "pairwise.complete.obs")
+cor_mat <- round(cor_mat, 2)
+
+# Přehledné názvy
+colnames(cor_mat) <- rownames(cor_mat) <- c(
+  "HPT (celkem)", "HPT (bez ROA)", "POP*", "ROA", "CONT", "FR-LF mini", "KN"
+)
+
+# Tabulka přes kableExtra
+kableExtra::kbl(
+  cor_mat,
+  caption = "Korelační matice (Pearson r; pairwise complete.obs)",
+  longtable = TRUE
+) |>
+  kableExtra::kable_styling(
+    bootstrap_options = "striped",
+    full_width = FALSE
+  ) |>
+  kableExtra::footnote(
+    general = "Pozn.: POP* = absence presentistického (populistického) uvažování; ROA = role aktéra; CONT = kontextualizace. FR-LF mini je průměr RD1–RD3 a NS1–NS3. KN = mini test znalostí. Korelace jsou pouze deskriptivní (bez korekce na shlukování ve třídách).",
+    general_title = ""
+  )
+
+```
+
+Konkrétně byly provedeny následující analýzy:
+
+- analýza spolehlivosti jednotlivých škál (Cronbachova alfa, McDonaldovo omega)
+- modely zohledňující shlukování ve třídách a školách (lineární smíšené modely)
+- kontrola vlivu znalostí (mini test znalostí)
+- test férovosti jednotlivých položek (DIF analýza)
+- srovnání struktury testu mezi různými skupinami (vícefaktorová analýza)
+
+Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc potvdily robustnost a použitelnost HPT dotazníku v českém překladu a kontextu.
+
+
+### Co si z výsledků může učitel odnést?
+
+1. **HPT dotazník lze používat pro ověření schonpsti žáků zaujmout dobové perspektivy.** Samozřejmě je vhodné ho kombinovat s dalšími nástroji a přístupy (např. HistoryLabovými cvičeními zaměřenými na tento koncept), ale jako jeden z nástrojů pro diagnostiku historického myšlení je použitelný.
+2. **Schopnost dobových perspektiv není to samé jako souhlas s danými postoji.** I žáci s autoritářskými nebo pro-nacistickými postoji mohou mít potíže s porozuměním lidem v minulosti v jejich dobovém kontextu. Naopak žáci s demokratickými postoji nemusí mít automaticky dobové perspektivy zvládnuté.
+3. **Znalosti jsou podstatné, ale nejsou vším.** Znalosti o daném historickém období (v tomto případě meziválečné Německo) hrají roli v tom, jak dobře žák dokáže zaujmout dobovou perspektivu, ale nejsou jediným faktorem a zdaleka ne tím hlavním. Je důležité rozvíjet i další dovednosti a schopnosti historického myšlení.
 
 ## Materiály
 
@@ -90,3 +374,4 @@ Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to troch
 - [Papírová verze k tisku (Google Docs)](https://docs.google.com/document/d/1oEAfcp7fBjfRQW56GQSGQ9JG2QocuZivh3VRTWBxK6U/edit?usp=sharing) - **je určeno k zadávání žákům**
 	- [Papírová verze k tisku (PDF, verze na 1 list)](https://drive.google.com/file/d/1I2cWLWs26P0-rOVmPBtnIV9M_F-htyk3/view?usp=sharing)
 	- [Papírová verze k tisku (PDF, verze na 2 listy)](https://drive.google.com/file/d/1IZKhkWbS8PiEFHFpI_FTiZxQ3RfPY8Vw/view?usp=sharing)
+- [Anonymizovaný dataset pro vlastní analýzy (RDS)](data/029-hpt-a-extremismus.RDS)
