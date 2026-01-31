@@ -46,7 +46,6 @@ jobs:
           GITHUB_PAT: ${{ secrets.GH_PAT }}
         run: |
           options(repos = c(CRAN = "https://cloud.r-project.org"))
-          options(pkgType = "binary")
           options(install.packages.check.source = "no")
 
           install.packages(c(
