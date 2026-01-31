@@ -56,7 +56,8 @@ jobs:
             "memoiR",
             "rmdformats",
             "tinytex",
-            "psych"
+            "psych",
+            "patchwork"
           ))
 
           # Install TinyTeX (TeX Live) for PDF rendering
