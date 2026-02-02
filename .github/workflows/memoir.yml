@@ -22,7 +22,7 @@ jobs:
         run: |
           options(pkgType = "binary")
           options(install.packages.check.source = "no")
-          install.packages(c("bookdown", "distill", "downlit", "memoiR", "rmdformats", "tinytex", "psych", "patchwork"))
+          install.packages(c("xfun", "bookdown", "distill", "downlit", "memoiR", "rmdformats", "tinytex", "psych", "patchwork"))
           tinytex::install_tinytex(bundle = "TinyTeX")
           tinytex::tlmgr_install("hyphen-french")
           tinytex::tlmgr_install("hyphen-italian")
