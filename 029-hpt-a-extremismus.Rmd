@@ -374,4 +374,4 @@ Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc
 - [Papírová verze k tisku (Google Docs)](https://docs.google.com/document/d/1oEAfcp7fBjfRQW56GQSGQ9JG2QocuZivh3VRTWBxK6U/edit?usp=sharing) - **je určeno k zadávání žákům**
 	- [Papírová verze k tisku (PDF, verze na 1 list)](https://drive.google.com/file/d/1I2cWLWs26P0-rOVmPBtnIV9M_F-htyk3/view?usp=sharing)
 	- [Papírová verze k tisku (PDF, verze na 2 listy)](https://drive.google.com/file/d/1IZKhkWbS8PiEFHFpI_FTiZxQ3RfPY8Vw/view?usp=sharing)
-- [Anonymizovaný dataset pro vlastní analýzy (RDS)](data/029-hpt-a-extremismus.RDS)
+- [Anonymizovaný dataset pro vlastní analýzy (RDS)](data/029-hpt-a-extremismus.RDS) ([codebook](data/029-hpt-a-extremismus-codebook.pdf))
