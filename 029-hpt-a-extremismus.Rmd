@@ -359,7 +359,7 @@ Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc
 
 ### Co si z výsledků může učitel odnést?
 
-1. **HPT dotazník lze používat pro ověření schonpsti žáků zaujmout dobové perspektivy.** Samozřejmě je vhodné ho kombinovat s dalšími nástroji a přístupy (např. HistoryLabovými cvičeními zaměřenými na tento koncept), ale jako jeden z nástrojů pro diagnostiku historického myšlení je použitelný.
+1. **HPT dotazník lze používat pro ověření schopnosti žáků zaujmout dobové perspektivy.** Samozřejmě je vhodné ho kombinovat s dalšími nástroji a přístupy (např. HistoryLabovými cvičeními zaměřenými na tento koncept), ale jako jeden z nástrojů pro diagnostiku historického myšlení je použitelný.
 2. **Schopnost dobových perspektiv není to samé jako souhlas s danými postoji.** I žáci s autoritářskými nebo pro-nacistickými postoji mohou mít potíže s porozuměním lidem v minulosti v jejich dobovém kontextu. Naopak žáci s demokratickými postoji nemusí mít automaticky dobové perspektivy zvládnuté.
 3. **Znalosti jsou podstatné, ale nejsou vším.** Znalosti o daném historickém období (v tomto případě meziválečné Německo) hrají roli v tom, jak dobře žák dokáže zaujmout dobovou perspektivu, ale nejsou jediným faktorem a zdaleka ne tím hlavním. Je důležité rozvíjet i další dovednosti a schopnosti historického myšlení.
 
@@ -375,3 +375,4 @@ Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc
 	- [Papírová verze k tisku (PDF, verze na 1 list)](https://drive.google.com/file/d/1I2cWLWs26P0-rOVmPBtnIV9M_F-htyk3/view?usp=sharing)
 	- [Papírová verze k tisku (PDF, verze na 2 listy)](https://drive.google.com/file/d/1IZKhkWbS8PiEFHFpI_FTiZxQ3RfPY8Vw/view?usp=sharing)
 - [Anonymizovaný dataset pro vlastní analýzy (RDS)](data/029-hpt-a-extremismus.RDS) ([codebook](data/029-hpt-a-extremismus-codebook.pdf))
+- [Ukázka výsledného reportu pro učitele (PDF)](data/029-hpt-a-extremismus-report.pdf)
