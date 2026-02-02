@@ -1,0 +1,868 @@
+% Template adapted from https://github.com/jgm/pandoc-templates/blob/master/default.latex
+% To be used with XeLaTex in memoiR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode=true}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+% Right to left support
+
+
+\documentclass[
+  12pt,
+  english,
+  a4paper,
+  extrafontsizes,onecolumn,openright
+  ]{memoir}
+
+% Double (or whatever) spacing
+
+% Math
+\usepackage{amssymb, amsmath}
+% mathspec: arbitrary math fonts
+\usepackage{unicode-math}
+\defaultfontfeatures{Scale=MatchLowercase}
+\defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+
+% Fonts
+\usepackage{lmodern}
+\usepackage{fontspec}
+% Main font
+% Specific sanserif font
+% Specific monotype font
+% Specific math font
+% Chinese, Japanese, Corean fonts
+
+% Use upquote for straight quotes in verbatim environments
+\usepackage{upquote}
+% Use microtype
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+
+% Verbatim in note
+
+% Color links
+\usepackage{xcolor}
+
+% Strikeout
+
+% Necessary for code chunks
+
+% Listings package
+
+% Tables
+\usepackage{longtable,booktabs,tabu}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+
+% Graphics
+\usepackage{graphicx,grffile}
+\graphicspath{{images/}}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+% Prevent overfull lines
+\setlength{\emergencystretch}{3em}  
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Number sections for memoir (secnumdepth counter is ignored)
+\setsecnumdepth{section}
+
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+% Spacing in lists
+\usepackage{enumitem}
+
+% Polyglossia
+\usepackage{polyglossia}
+\setmainlanguage{en}
+
+% localized quotes
+\usepackage[strict,autostyle]{csquotes}
+
+% BibLaTeX
+\usepackage[backend=biber,style=authoryear-ibid,isbn=false,backref=true,giveninits=true,uniquename=init,maxcitenames=2,maxbibnames=150,sorting=nyt,sortcites=false]{biblatex}
+\addbibresource{references.bib}
+
+% cslreferences environment required by pandoc > 2.7
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% memoiR format
+
+% Chapter Summary environment 
+\usepackage[tikz]{bclogo}
+\newenvironment{Summary}
+  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{Shrnutí v kostce}\parindent0pt}
+  {\end{bclogo}}
+% Syntax:
+%
+%```{block, type='Summary'}
+% Deliver message here.
+% ```
+
+% scriptsize code 
+\let\oldverbatim\verbatim
+\def\verbatim{\oldverbatim\scriptsize}
+% Applies to code blocks and R code results
+% code chunk options size='scriptsize' applies only to R code and results
+% if the code chunk sets a different size, \def\verbatim{...} is prioritary for code results 
+
+
+% memoiR dalef3 chapter style 
+% https://ctan.crest.fr/tex-archive/info/latex-samples/MemoirChapStyles/MemoirChapStyles.pdf
+\usepackage{soul}
+\definecolor{nicered}{rgb}{.647,.129,.149}
+\makeatletter
+\newlength\dlf@normtxtw
+\setlength\dlf@normtxtw{\textwidth}
+\def\myhelvetfont{\def\sfdefault{mdput}}
+\newsavebox{\feline@chapter}
+\newcommand\feline@chapter@marker[1][4cm]{%
+  \sbox\feline@chapter{%
+    \resizebox{!}{#1}{\fboxsep=1pt%
+	  \colorbox{nicered}{\color{white}\bfseries\sffamily\thechapter}%
+	}}%
+  \rotatebox{90}{%
+    \resizebox{%
+	  \heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}}%
+	{!}{\scshape\so\@chapapp}}\quad%
+  \raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
+ }
+\newcommand\feline@chm[1][4cm]{%
+  \sbox\feline@chapter{\feline@chapter@marker[#1]}%
+  \makebox[0pt][l]{% aka \rlap
+    \makebox[1cm][r]{\usebox\feline@chapter}%
+  }}
+\makechapterstyle{daleif1}{
+  \renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+  \renewcommand\chaptitlefont{\normalfont\huge\bfseries\scshape\color{nicered}}
+  \renewcommand\chapternamenum{}
+  \renewcommand\printchaptername{}
+  \renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+  \renewcommand\afterchapternum{\par\vskip\midchapskip}
+  \renewcommand\printchaptertitle[1]{\chaptitlefont\raggedleft ##1\par}
+}
+\makeatother
+
+
+% Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Based on memoir, style companion
+\newcommand{\MemoirChapStyle}{daleif1}
+\newcommand{\MemoirPageStyle}{Ruled}
+
+% Space between paragraphs
+\usepackage{parskip}
+  \abnormalparskip{3pt}
+
+% Adjust margin paragraphs vertical position
+\usepackage{marginfix}
+
+
+% Margins
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% allow use of '-',+','/' ans '*' to make simple length computation
+\usepackage{calc}
+
+% Full-width figures utilities
+\newlength\widthw % full width
+\newlength{\rf}
+\newcommand*{\definesHSpace}{
+  \strictpagecheck % slower but efficient detection of odd/even pages
+  \checkoddpage
+  \ifoddpage
+  \setlength{\rf}{0mm}
+  \else
+  \setlength{\rf}{\marginparsep+\marginparwidth}
+  \fi
+}
+
+\makeatletter
+% 1" margins for the front matter.
+\newcommand*{\SmallMargins}{
+  \setlrmarginsandblock{1.5in}{1.5in}{*}
+  \setmarginnotes{0.1in}{0.1in}{0.1in}
+ \setulmarginsandblock{1.5in}{1in}{*}
+  \checkandfixthelayout
+  \ch@ngetext
+  \clearpage
+  \setlength{\widthw}{\textwidth+\marginparsep+\marginparwidth}
+  \footnotesatfoot
+  \chapterstyle{\MemoirChapStyle}  % Chapter and page styles must be recalled
+  \pagestyle{\MemoirPageStyle}
+}
+
+% 3" outer margin for the main matter
+\newcommand{\LargeMargins}{\SmallMargins}
+\makeatother
+
+% Figure captions and footnotes in outer margins
+
+
+% Local toc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titletoc}
+\newcommand{\toc}[1]{%
+  \startcontents[chapters]%
+  \printcontents[chapters]{}{1}[#1]{}%
+  ~\newline%
+}
+
+
+% Text boxes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define a style for mdframed boxes
+\mdfdefinestyle{boxstyle}{
+	skipabove=1.5\topskip,
+	skipbelow=.5\topskip,
+	rightmargin=0pt,
+	leftmargin=0pt,
+	innerrightmargin=7pt,
+	innerleftmargin=7pt,
+	topline=false,
+	bottomline=false,
+	rightline=false,
+	leftline=false,
+	frametitlerule=true,
+	linecolor=black,
+	fontcolor=black,
+	frametitlealignment=\noindent
+}
+
+
+% Main title page with filigrane
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Text blocks
+\usepackage[absolute,overlay]{textpos}
+  \setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+
+\newcommand{\MainTitlePage}[2]{
+  \SmallMargins % Margins
+  \pagestyle{empty} % No header/footer
+  \textblockorigin{\stockwidth-\paperwidth-\trimedge}{\trimtop} % recto
+  \begin{textblock*}{2mm}(\spinemargin/2,\uppermargin/2)
+    \rule{1pt}{\paperheight-\uppermargin}
+  \end{textblock*}
+  \begin{textblock*}{\paperwidth*2/3}(\paperwidth/5, \paperheight/5)
+    \flushright
+    \begin{Spacing}{3}
+      {\fontfamily{qtm}\selectfont\fontsize{45}{45}\selectfont\textsc{\thetitle}}
+    \end{Spacing}
+  \end{textblock*}
+    \begin{textblock*}{\paperwidth*2/3}(\paperwidth/5, \paperheight/2)
+    \flushright
+    {\fontfamily{qtm}\huge\theauthor}
+  \end{textblock*}
+    \begin{textblock*}{\paperwidth*2/3}[0, 1](\spinemargin, \uppermargin+\textheight)
+    \normalfont\thedate
+  \end{textblock*}
+  ~\\ % Print a character or the page will not exist
+  \newpage
+  \textblockorigin{\trimedge}{\trimtop} % verso
+  \begin{textblock*}{\textwidth}(\paperwidth-\spinemargin-\textwidth, \uppermargin)
+    #1
+  \end{textblock*}
+  \begin{textblock*}{\textwidth}[0,1](\paperwidth-\spinemargin-\textwidth, \uppermargin+\textheight+\footskip)
+    \centering
+          \includegraphics[width=\paperwidth/4]{logo}\\ \bigskip
+        #2
+  \end{textblock*}
+  ~\\ % Print a character or the page will not exist
+  \newpage
+}
+
+% Clear page and open an even one (\clearpage opens an odd one)
+\newcommand{\evenpage}{
+  \clearpage
+  \strictpagecheck % slower but efficient detection of odd/even pages
+  \checkoddpage
+  \ifoddpage
+    \thispagestyle{empty}
+    ~\\ % Print a character or the page will not exist
+    \newpage
+  \else
+    % do nothing
+  \fi
+}
+
+
+%% PDF title page to insert
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{pdfpages}
+
+
+%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Repeated citation as author-year-title instead of author-title (modification of footcite:note in verbose-inote.cbx)
+
+%% Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fix the typesetting of the part number
+\renewcommand\partnumberlinebox[2]{#2\ ---\ }
+
+
+% Fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Hyperref comes last
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Judovo ověřování historického myšlení},
+  pdfauthor={Juda Kaleta},
+  colorlinks=true,
+  linkcolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  breaklinks=true}
+
+% Don't use monospace font for urls
+\urlstyle{same}
+
+
+% Title, author, date from YAML to LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Judovo ověřování historického myšlení}
+
+\author{Juda Kaleta}
+
+\date{2026-02-02}
+
+
+% Include headers (preamble.tex) here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add LaTeX code into the preamble of the document here
+\hyphenation{bio-di-ver-si-ty sap-lings}
+
+% Define colors for text boxes
+\definecolor{grey}{HTML}{F5F5F5}
+
+% Define text box environments
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=grey,
+	frametitlebackgroundcolor=grey,
+]{greybox}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+% End of preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\frontmatter
+
+% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepdf[pages=1]{images/cover.pdf}
+\cleardoublepage
+
+\MainTitlePage{This document is reproducible thanks to:
+
+\begin{itemize}
+  \item \LaTeX and its class memoir (\url{http://www.ctan.org/pkg/memoir}).
+  \item R (\url{http://www.r-project.org/}) and RStudio (\url{http://www.rstudio.com/})
+  \item bookdown (\url{http://bookdown.org/}) and memoiR (\url{https://ericmarcon.github.io/memoiR/})
+\end{itemize}}{Name of the owner of the logo
+
+\url{http://www.company.com}
+
+An explanatory sentence.
+Leave an empty line for line breaks.}
+
+
+% Before Body
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+% Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\LargeMargins
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+
+% Body
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\LargeMargins
+\chapter*{Úvod}\label{uxfavod}
+\addcontentsline{toc}{chapter}{Úvod}
+
+Toto je veřejné sdílení předběžných zjištění, myšlenek a materiálů k diskuzi v rámci mého doktorského studia,
+ve kterém se zaměřuji na problematiku historického myšlení a jeho ověřování ve výuce dějepisu.
+
+Cíle tohoto webu jsou následující:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Protože samotná dizertace i průběžné výstupy budou převážně v angličtině, tento web by měl zjištění zprostředkovat i českému čtenáři.
+\item
+  Zároveň ve shodě s principy open science se budu snažit zprostředkovávat průběžný stav výzkumu -- a otevřít ho tak přípomínkám, dotazům a návrhům na vylepšení.
+\item
+  V neposlední řádě chci touto cestou vrátit svůj dluh zapojeným učitelům a sdílet s nimi materiály, které by sami mohli adaptovat v hodinách.
+\end{enumerate}
+
+Z principu je tento web \emph{work-in-progress} - jeho obsah se bude proměňovat. Veškeré změny jsou evidovány v logu \href{https://github.com/yetty/phd-public}{Github repozitáře}.
+
+Obsah neprochází žádnou formální kontrolou, ani po stránce obsahové, ani jazykové. Pokud narazíte na (třeba jazykovou) chybu, alespoň víte, že nečtete žádný výplod umělé inteligence.
+
+V každém případě mi můžete dát vědět na mail \href{mailto:juda.kaleta@gmail.com}{\nolinkurl{juda.kaleta@gmail.com}}.
+
+Díky a ať je vám obsah k užitku.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Veškerý obsah tohoto webu je publikován pod licencí CC BY 4.0}
+
+\chapter{HPT a extremismus}\label{hpt-a-extremismus}
+
+Existující modely historického myšlení pracují s konceptem tzv. dobových perspektiv (\emph{historical perspectives}). Projekt Dějepis+ je rámoval otázkou \emph{\enquote{Jak lépe porozumět lidem, kteří žili v minulosti?}} \autocite[ p.~10]{Cinatl2021Metodika}. Jak ale, že žákům se porozumět lidem v minulosti daří?
+
+Jedním z nástrojů, který se o to pokouší, je tzv. Historical Perspective Taking (HPT) dotazník \autocite{Hartmann_Hasselhorn2008Historical}. Má solidní empirické podložení a úspěšně ho adaptovaly i další výzkumy \autocite{Huijgen_et_al2014Testing,Huijgen_et_al2017Toward}.
+
+Zdá se mi ale, že má jeden zásadní nedostatek -- nijak nezohledňuje současné perspektivy žáků. Jinými slovy: žák, který dosáhne lepšího výsledku v HPT, nemusí ve skutečnosti vykazovat lepší porozumění lidem v minulosti. Může výsledku dosáhnout proto, že nepřejímá implicitní předpoklad současné perspektivy HPT -- tedy že současná perspektiva všech žáků je \emph{\enquote{nacismus byl špatný}}.
+
+Jak výsledky ovlivňují právě názory (a perspektiva) žáka, bych chtěl ověřit následujícím výzkumem.
+
+\section{Plánovaný výzkum}\label{pluxe1novanuxfd-vuxfdzkum}
+
+\subsection{Plán a cíle výzkumu}\label{pluxe1n-a-cuxedle-vuxfdzkumu}
+
+\textbf{Hlavní cíl:} Ověřit, jestli a jak moc mohou dnešní postoje žáků (příklon k autoritarismu, normalizace nacismu) ovlivnit výsledky ve validovaném nástroji na měření historických perspektiv -- tedy budit dojem dobrého historického myšlení jen proto, že jejich názory souzní s názory tehdejších aktérů.
+
+Kromě toho by výzkum měl čéskym učitelům přispět
+
+\begin{itemize}
+\tightlist
+\item
+  ověřeným českým překladem HPT dotazníku;
+\item
+  ověřeným nástroje pro ověření současných perspektiv žáků (FR-LF, KSA-3, SDR-5)
+\end{itemize}
+
+Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejich žáci jsou jak se schopností zaujmout dobové perspektivy, tak ohledně příklonu k různým autoritářským postojům -- a v konečném důsledku tedy pomoci lépe přizpůsobit výuku moderních a soudobých dějin potřebám konkrétní třídy.
+
+\subsubsection{Jak to bude prakticky probíhat}\label{jak-to-bude-prakticky-probuxedhat}
+
+\textbf{Kdo:} 9. ročník ZŠ + všechny ročníky SŠ
+
+\textbf{Čas:} 15-25 minut čistého času
+
+\textbf{Jednotlivé části:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Sběr základních údajů:} dotazník je anonymní, žáci pouze zadají svou třídu, pohlaví a poslední známku z dějepisu.
+\item
+  \textbf{Mini-test znalostí (6 položek)} -- pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. \autocite{Huijgen_et_al2017Toward}
+\item
+  \textbf{Úkol na dobové perspektivy} -- český překlad ověřeného nástroje, který je postaven na fiktiní situaci z meziválečného Německa. \autocite{Hartmann_Hasselhorn2008Historical}
+\item
+  \textbf{Krátký anonymní dotazník postojů} -- obsahuje náhodně seřazené položky tří nástrojů:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    FR-LF (mini verze o 6 položkách) - měří postoje k autoritářské vládě a zlehčování nacismu \autocite{Decker_et_al2013Rechtsextremismus}
+  \item
+    KSA-3 -- měří ultra-pravicovou názorovou orientaci \autocite{Beierlein_et_al2014Die_Kurzskala,Nießen_et_al2019An_English}
+  \item
+    SDR-5 -- měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře \autocite{Hays_et_al1989A_Five}
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Co bude dělat učitel?}
+
+\begin{itemize}
+\tightlist
+\item
+  zašlete odkaz na vyplnění dotazníku (elektronicky) \emph{nebo} rozdáte vytištěné dotazníky v papírové variantě
+\item
+  dohlédnete na klidný průběh a odevzdání
+\end{itemize}
+
+\textbf{Etika a bezpečí}
+
+\begin{itemize}
+\tightlist
+\item
+  Účast je \textbf{dobrovolná a anonymní}, žák může vyplňování odmítnout -- nenuťte ho, prosím
+\item
+  Pokud by některé otázky vyvolaly reakci žáků, doporučuji zařadit krátký bezpečný prostor pro reflexi a sdilení
+\end{itemize}
+
+\subsubsection{Co jako jako zapojený učitel dostanu?}\label{co-jako-jako-zapojenuxfd-uux10ditel-dostanu}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Souhrnný report za třídu/školu}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    jaké žáci prokázali schopnosti zaujmout dobovou perspektivu
+  \item
+    jaký se u nich projevil vztah mezi znalostmi a schopností zaujmout dobovou perspektivu
+  \item
+    případné náznaky nežádoucího \enquote{přilepšení} výkonu na základě postojů žáku
+  \end{itemize}
+\item
+  \textbf{Doporučení do výuky}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    tipy na základě výzkumů, jak prohlubovat schopnost žáků zaujmout dobové perspektivy;
+  \item
+    tipy, jak vybírat kontext, který žákům pomůže (časový, prostorový, socio-politický, socio-kulturní)
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Předpokládaná zjištění}\label{pux159edpokluxe1danuxe1-zjiux161tux11bnuxed}
+
+\subsubsection{Scénář A -- potvrzení vlivu postojů žáka}\label{scuxe9nuxe1ux159-a-potvrzenuxed-vlivu-postojux16f-ux17euxe1ka}
+
+Pracovní hypotéza je, že příklon žáka k extremistickým postojům může kontaminovat výsledky testu na schopnost zaujmout dobové perspektivy. Pokud se to potvrdí, bude to pro nás:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  signál, že při výuce dějepisu je důležité s postoji žáka pracovat a vědomě je reflektovat, protože mohou ovlivnit nejen jeho přemýšlení o minulosti, ale i to, jak jeho výstupy působí skrytě na učitele;
+\item
+  solidní základ pro přemýslení o tom, jak konstruovat ověřování schopnosti zaujmout dobové perspektivy, které by nebylo náchylné na ovlivnění postoji žáka.
+\end{enumerate}
+
+\subsubsection{Scénář B -- vliv postojů žáka se neprokáže}\label{scuxe9nuxe1ux159-b-vliv-postojux16f-ux17euxe1ka-se-neprokuxe1ux17ee}
+
+Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to trochu zklamání a překvapení. Nicméně i to bude cenné zjištění -- a hlavně, zůstane nám validovaný a funkční nástroj, pomocí kterého bude možné schopnost žáků zaujmout dobovou perspektivu ověřovat.
+
+\subsubsection{FAQ pro učitele}\label{faq-pro-uux10ditele}
+
+\textbf{Není to politický průzkum?} -- Ne. Nezajímají mne přímo politické postoje žáků, ale to, jak mohou ovlivnit (kontaminovat) ověřování schopnosti zaujmout dobovou prespektivu.
+
+\textbf{Proč se pracuje s \enquote{fiktivní} situací bez primárního pramene?} -- Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.
+
+\textbf{Můžu úlohy a dotazníky nějak připomínkovat?} -- Rozhodně! Pokud máte návrh na vylepšení překladu nebo formulace, napište mi na \href{mailto:juda.kaleta@gmail.com}{\nolinkurl{juda.kaleta@gmail.com}}. Zároveň ale platí, že se snažím být věrný originálu -- takže vylepšení, které se budou příliš vzdalovat od původní verze, sice ocením a poznamenám si, ale spíše nebudu moci začlenit.
+
+\section{Výsledky výzkumu}\label{vuxfdsledky-vuxfdzkumu}
+
+V dějepise se často snažíme žákům pomoci porozumět lidem v minulosti v jejich dobovém kontextu, nikoli je hodnotit dnešníma očima. Tuto schopnost se výzkumně snaží zachytit test Historical Perspective Taking (HPT). Jenže\ldots{}
+
+\phantomsection\label{pythbox}
+Nemůže žák dosáhnout dobrého výsledku v testu dobových perspektiv spíše proto, že jeho \textbf{současné postoje souzní s postoji historických aktérů}, než proto, že skutečně dobře historicky uvažuje?
+
+Konkrétně: nemohou zda autoritářské nebo pro-nacistické postoje „vylepšit`` výsledek v úloze zaměřené na porozumění meziválečnému Německu?
+
+\phantomsection\label{pythbox}
+\textbf{Ne, předpoklad, že žáci s autoritářskými postoji dosáhnou lepších výsledků v HPT testu, se nepotvrdil.} Korelace mezi postoji a výsledky v HPT byla velmi slabá až nulová. To znamená, že výsledky v HPT testu nejsou kontaminovány současnými postoji žáků. Dobrá zpráva pro učitele dějepisu - výsledky v HPT testu skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. \textbf{Můžete ho tedy bez obav používat jako nástroj pro diagnostiku historického myšlení vašich žáků.}
+
+\subsection{Jak výzkum probíhal?}\label{jak-vuxfdzkum-probuxedhal}
+
+Výzkum proběhl v prosinci 2025 a zúčastnili se ho žáci 9. ročníků ZŠ a všech ročníků SŠ z různých typů škol a regionů ČR. Cílem při tom nebyla reprezentativnost (výsledky tedy nic neříkají o tom, jak jsou na tom \enquote{čeští žáci} obecně), ale jen zjištění, zda se potvrdí hypotéza, že autoritářské postoje žáků mohou ovlivnit výsledky v HPT testu.
+
+\scriptsize
+
+\normalsize
+
+Celkem se výzkumu zúčastnilo 293 žáků z 10 škol (20 tříd).
+
+\scriptsize
+
+\normalsize
+
+\subsubsection{Podrobnosti o vzorku žáků}\label{podrobnosti-o-vzorku-ux17euxe1kux16f}
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/demographics_plots-1} \end{center}
+
+\normalsize
+
+\subsubsection{Co žáci vyplňovali?}\label{co-ux17euxe1ci-vyplux148ovali}
+
+Žáci vyplňovali dotazník v délce přibližně 20-30 minut pomocí Google Forms (online). Dotazník obsahoval:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Základní údaje} -- konkrétně třída, pohlaví a poslední známka z dějepisu.
+\item
+  \textbf{Mini-test znalostí} -- 6 otázek na základní znalosti o meziválečném Německu pro kontrolu vlivu znalostí na výsledky HPT.
+\item
+  \textbf{HPT dotazník} -- český překlad ověřeného nástroje na měření schopnosti zaujmout dobové perspektivy \autocite{Hartmann_Hasselhorn2008Historical}.
+\item
+  \textbf{Dotazník postojů} -- obsahoval položky z následujících nástrojů:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    FR-LF (mini verze o 6 položkách) -- měří postoje k autoritářské vládě a zlehčování nacismu \autocite{Decker_et_al2013Rechtsextremismus}
+  \item
+    KSA-3 -- měří ultra-pravicovou názorovou orientaci \autocite{Beierlein_et_al2014Die_Kurzskala,Nießen_et_al2019An_English}
+  \item
+    SDR-5 -- měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře \autocite{Hays_et_al1989A_Five}
+  \end{itemize}
+\end{enumerate}
+
+Všechny nástroje byly přeloženy do češtiny a zpětně přeloženy do angličtiny pro ověření kvality překladu. HPT dotazník byl navíc zkontrolován nezávislým učitelem dějepisu s dostatečnou praxí a znalostí modelů historického myšlení. Všechny dotazníky níže v sekci Materiály.
+
+\subsection{Výsledky}\label{vuxfdsledky}
+
+\textbf{Hlavní výsledek} -- nepotvrdilo se, že by příklon žáků k autoritářským nebo extremistickým postojům zlepšoval výsledky v HPT testu.
+
+\begin{itemize}
+\tightlist
+\item
+  Vztah mezi postoji žáků a jejich výsledky v HPT byl \textbf{velmi slabý}.
+\item
+  Žáci s autoritářskými postoji nedosahovali statisticky lepším výsledků, spíše data naznačovala opak (i když velmi slabě).
+\end{itemize}
+
+\textbf{Závěr?} Výsledky v HPT testu tedy skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. To je dobrá zpráva pro učitele -- můžete HPT test použít pro měření, jestli žák dokáže zaujmout dobovou perspektivu a nemusíte se moc bát, že by žáci \enquote{ošidili} test svými postoji.
+
+\subsubsection{Podrobnější výsledky}\label{podrobnux11bjux161uxed-vuxfdsledky}
+
+Rozložení výsledků HPT zhruba odpovídá normálnímu rozložení, které se dalo očekávat. Celkově žáci dosahovali o něco nižších výsledků než v původní studii \autocite{Huijgen_et_al2017Toward}, ale rozdíl nebyl velký. Vliv na to mělo i to, že na rozdíl od nizozemské studie se výzkumu zúčastnili i žáci 9. ročníků ZŠ, učilišť a středních odborných škol. V nizozemskě studii šlo pouze o žáky z ekvivalentu gymnázií.
+
+Zároveň ale platí, že zapojení čeští učitelé se rekrutovali především z těch, kteří mají zájem o moderní dějiny a výuku dějepisu, takže nelze vyloučit, že jejich žáci mohou být nadprůměrní i v tomto ohledu. Opakuji, že výzkum ale nebyl zaměřen na reprezentativnost, ale jen na ověření hlavní hypotézy.
+
+\scriptsize
+
+\begin{longtable}[t]{rrrrr}
+\caption{\label{tab:unnamed-chunk-1}Základní deskriptivní statistiky celkového skóre HPT}\\
+\toprule
+Průměr & Rozptyl & SD & Minimum & Maximum\\
+\midrule
+2.83 & 0.24 & 0.49 & 1.67 & 3.89\\
+\bottomrule
+\end{longtable}
+
+\normalsize
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/hpt_histogram-1} \end{center}
+
+\normalsize
+
+Vztah mezi postoji a HPT je znázorněn na následujícím grafu lineární regresní přímkou. Jak je vidět, vztah je velmi slabý. Tento výsledek byl potvrzen složitějšími statistickými modely (lineární smíšené modely s náhodnými efekty pro třídy a školy), které ale zde neuvádím pro přehlednost. Zájemcům rád poskytnu kompletní analýzy, v budoucnu se snad objeví i v nějakém odborném článku.
+
+Ve vztahu k testu znalostí se potvrdily výsledky předchozích studií, že znalosti se na výsledcích HPT podílejí zhruba z 20 \%. Žáci s lepšími znalostmi dosahovali i lepších výsledků v HPT testu.
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/hpt_results-1} \end{center}
+
+\normalsize
+
+\subsubsection{Korelační matice}\label{korelaux10dnuxed-matice}
+
+\scriptsize
+
+\begin{longtable}[t]{l|r|r|r|r|r|r|r}
+\caption{\label{tab:unnamed-chunk-2}Korelační matice (Pearson r; pairwise complete.obs)}\\
+\hline
+  & HPT (celkem) & HPT (bez ROA) & POP* & ROA & CONT & FR-LF mini & KN\\
+\hline
+HPT (celkem) & 1.00 & 0.90 & 0.64 & 0.72 & 0.78 & -0.03 & 0.37\\
+\hline
+HPT (bez ROA) & 0.90 & 1.00 & 0.76 & 0.35 & 0.82 & -0.04 & 0.33\\
+\hline
+POP* & 0.64 & 0.76 & 1.00 & 0.16 & 0.25 & -0.09 & 0.31\\
+\hline
+ROA & 0.72 & 0.35 & 0.16 & 1.00 & 0.38 & 0.00 & 0.28\\
+\hline
+CONT & 0.78 & 0.82 & 0.25 & 0.38 & 1.00 & 0.02 & 0.23\\
+\hline
+FR-LF mini & -0.03 & -0.04 & -0.09 & 0.00 & 0.02 & 1.00 & -0.11\\
+\hline
+KN & 0.37 & 0.33 & 0.31 & 0.28 & 0.23 & -0.11 & 1.00\\
+\hline
+\multicolumn{8}{l}{\rule{0pt}{1em}Pozn.: POP* = absence presentistického (populistického) uvažování; ROA = role aktéra; CONT = kontextualizace. FR-LF mini je průměr RD1–RD3 a NS1–NS3. KN = mini test znalostí. Korelace jsou pouze deskriptivní (bez korekce na shlukování ve třídách).}\\
+\end{longtable}
+
+\normalsize
+
+Konkrétně byly provedeny následující analýzy:
+
+\begin{itemize}
+\tightlist
+\item
+  analýza spolehlivosti jednotlivých škál (Cronbachova alfa, McDonaldovo omega)
+\item
+  modely zohledňující shlukování ve třídách a školách (lineární smíšené modely)
+\item
+  kontrola vlivu znalostí (mini test znalostí)
+\item
+  test férovosti jednotlivých položek (DIF analýza)
+\item
+  srovnání struktury testu mezi různými skupinami (vícefaktorová analýza)
+\end{itemize}
+
+Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc potvdily robustnost a použitelnost HPT dotazníku v českém překladu a kontextu.
+
+\subsection{Co si z výsledků může učitel odnést?}\label{co-si-z-vuxfdsledkux16f-mux16fux17ee-uux10ditel-odnuxe9st}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{HPT dotazník lze používat pro ověření schopnosti žáků zaujmout dobové perspektivy.} Samozřejmě je vhodné ho kombinovat s dalšími nástroji a přístupy (např. HistoryLabovými cvičeními zaměřenými na tento koncept), ale jako jeden z nástrojů pro diagnostiku historického myšlení je použitelný.
+\item
+  \textbf{Schopnost dobových perspektiv není to samé jako souhlas s danými postoji.} I žáci s autoritářskými nebo pro-nacistickými postoji mohou mít potíže s porozuměním lidem v minulosti v jejich dobovém kontextu. Naopak žáci s demokratickými postoji nemusí mít automaticky dobové perspektivy zvládnuté.
+\item
+  \textbf{Znalosti jsou podstatné, ale nejsou vším.} Znalosti o daném historickém období (v tomto případě meziválečné Německo) hrají roli v tom, jak dobře žák dokáže zaujmout dobovou perspektivu, ale nejsou jediným faktorem a zdaleka ne tím hlavním. Je důležité rozvíjet i další dovednosti a schopnosti historického myšlení.
+\end{enumerate}
+
+\section{Materiály}\label{materiuxe1ly}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://docs.google.com/document/d/1dVALx38nJEfqsNkWrgBRTvNikQI5fTJ3-S9JJCXsd5Q/edit?usp=sharing}{Stručný výzkumný záměr (anglicky)}
+\item
+  \href{https://docs.google.com/document/d/10geollT853sY61kzo2I76jjGK4XT5bYbCAtHSZfF6s8/edit?usp=sharing}{Mini test znalostí} (není určen pro sdílení se žáky)
+\item
+  \href{https://docs.google.com/document/d/1MdAjadyAtGVR-gfEgizH5-RXEBgc0I-cpo3qNG2VAtY/edit?usp=sharing}{Překlad HPT dotazníku do češtiny} (není určen k sdílení se žáky)
+\item
+  \href{https://docs.google.com/document/d/1qkEgybQVgHTRuyUbPhlDYg0_SjQLAxq9gkS4jzUj5e8/edit?usp=sharing}{Adaptace FR-LF + KSA + SDR dotazníku do češtiny} (není určeno ke sdílení se žáky)
+\item
+  \href{https://docs.google.com/forms/d/1cL_q5lPQ6lpoHRFE_gyXv6z8oWWou6jrpHVk1lYWTsQ/copy}{Google Form šablona celého dotazníku ke kopírování} (vyžaduje Google účet)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    po vytvoření kopie \textbf{je určeno k online zadávání žákům}
+  \end{itemize}
+\item
+  \href{https://docs.google.com/document/d/1oEAfcp7fBjfRQW56GQSGQ9JG2QocuZivh3VRTWBxK6U/edit?usp=sharing}{Papírová verze k tisku (Google Docs)} - \textbf{je určeno k zadávání žákům}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://drive.google.com/file/d/1I2cWLWs26P0-rOVmPBtnIV9M_F-htyk3/view?usp=sharing}{Papírová verze k tisku (PDF, verze na 1 list)}
+  \item
+    \href{https://drive.google.com/file/d/1IZKhkWbS8PiEFHFpI_FTiZxQ3RfPY8Vw/view?usp=sharing}{Papírová verze k tisku (PDF, verze na 2 listy)}
+  \end{itemize}
+\item
+  \href{data/029-hpt-a-extremismus.RDS}{Anonymizovaný dataset pro vlastní analýzy (RDS)} (\href{data/029-hpt-a-extremismus-codebook.pdf}{codebook})
+\item
+  \href{data/029-hpt-a-extremismus-report.pdf}{Ukázka výsledného reportu pro učitele (PDF)}
+\end{itemize}
+
+\chapter*{Literatura}\label{literatura}
+\addcontentsline{toc}{chapter}{Literatura}
+
+
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\backmatter
+\SmallMargins
+
+\twocolumn
+\renewcommand*{\bibfont}{\scriptsize}
+\printbibliography
+\onecolumn
+
+
+% Tables (of tables, of figures)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\cleardoublepage
+\LargeMargins
+\listoffigures
+
+
+% After-body (LaTeX code inclusion)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% Back cover
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Even page, small margins, no running head, no page number.
+\evenpage
+\SmallMargins
+\thispagestyle{empty}
+
+\begin{normalsize}
+
+\begin{description}
+
+\selectlanguage{english}
+\item[Abstract]
+English abstract, on the last page.
+
+This is a bookdown template based on LaTeX memoir class.
+\item[Keywords]
+Keyword in English, As a list.
+~\\
+
+\end{description}
+
+\end{normalsize}
+
+\vspace*{\fill}
+\centering\includegraphics[width=.3\textwidth]{images/logo}
+
+\end{document}
