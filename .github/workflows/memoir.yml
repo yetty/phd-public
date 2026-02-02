@@ -22,6 +22,7 @@ jobs:
         run: |
           options(pkgType = "binary")
           options(install.packages.check.source = "no")
+          options(repos = c(CRAN = "https://cloud.r-project.org"))
           install.packages(c("xfun", "bookdown", "distill", "downlit", "memoiR", "rmdformats", "tinytex", "psych", "patchwork", "rmarkdown"), dependencies=TRUE)
           tinytex::install_tinytex(bundle = "TinyTeX")
           tinytex::tlmgr_install("hyphen-french")
