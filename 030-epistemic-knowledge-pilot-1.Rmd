@@ -1,0 +1,79 @@
+# Umí žáci vyvozovat oprávněné závěry z pramenů? 
+
+*Argumentuj na základě pramene... Opravdu to pramen říká? ... Není to už jen interpretace?*
+
+V hodinách dějepisu a zejména v badatelské výuce po žácích často chceme, aby vyvozovali své závěry z pramenů. Jenže není vždy snadné poznat, jestli to skutečne umí - schopnost vyvozovat oprávněné závěry z pramenů se ztrácí pod vrstvou dalších dovedností a znalostí, jako je obecné čtení s porozuměním, schopnost pracovat s historickými prameny, schopnost formulovat závěry a argumenty, atd.
+
+Tento výzkum si klade za cíl vytvořit nástroj, který by nám pomohl zjistit, jak žáci závěry z pramenů vyvozují, aniž by v tom hrály vliv jiné faktory. 
+
+Nejde o test faktů.
+
+Nejde o zkoušení znalostí učiva.
+
+Jde o to, jak žáci uvažují nad zdroji a tvrzeními o minulosti.
+
+## Proč by to pro učitele mohlo být užitečné?
+
+Zapojeným učitelům může výzkum přinést:
+
+- přehled o tom, jak jejich žáci pracují s tvrzeními a důkazy,
+- srovnání různých tříd (pokud se zapojí více tříd),
+- podněty, kde mají žáci tendenci „přeskakovat“ k rychlým závěrům,
+- konkrétní doporučení, jak tyto dovednosti dál rozvíjet.
+
+Výsledkem nebude jen tabulka bodů, ale stručný a srozumitelný report pro Vaši třídu, který ukáže:
+
+- v čem jsou žáci silní,
+- kde mají typické potíže,
+- jaké typy úvah se u nich objevují.
+
+Cílem není hodnotit učitele ani školu.
+Smyslem je nabídnout nástroj, který může pomoci lépe zacílit výuku.
+
+
+## Jak bude výzkum probíhat?
+
+- **Kdo?** 9. ročník ZŠ a všechny ročníky SŠ
+- **Čas:** cca 30–45 minut
+- **Jak?** Online test, který žáci vyplní na počítači, tabletu nebo telefonu.
+    1. Obdržíte unikátní odkaz (a QR kód).
+    2. Odkaz pošlete žákům nebo promítnete ve třídě.
+    3. Žáci test vyplní online.
+    4. Není potřeba žádná registrace.
+
+- **Co žáci budou vyplňovat:**
+    1. Krátké základní údaje (anonymně).
+    2. Úkoly se zdroji a tvrzeními – vybírají, zda je tvrzení oprávněné, a zdůvodňují proč.
+    3. Dvě složitější situace z „reálnějšího“ kontextu.
+
+Účast žáků je dobrovolná a anonymní. 
+
+### Ukázka úkolu
+
+![Ukázka úkolu](./images/030-ukazka-testove-ulohy.png)
+
+## Co jako zapojený učitel dostanu?
+
+1. Souhrnný report za Vaši třídu
+    - jak žáci pracují s tvrzeními a důkazy,
+    - kde mají tendenci dělat ukvapené závěry,
+    - jaký je vztah mezi znalostmi a způsobem uvažování.
+2. Doporučení do výuky
+    - tipy na úpravu zadání úloh,
+    - návrhy, jak pracovat s tvrzeními a důkazy,
+    - inspiraci pro vlastní aktivity.
+3. Možnost konzultace výsledků (online / e-mailem).
+
+Kromě toho dobrý pocit z toho, že pomůžete ověřit nástroj, který může být užitečný pro širší komunitu učitelů. Podílíte se na výzkumu, který má ambici zlepšit způsob, jak ověřujeme práci žáků v dějepise.
+
+### K čemu to může být ve výuce?
+
+Možná znáte situace, kdy:
+
+- žáci rychle odpovídají, ale jejich závěry nejsou úplně opřené o zdroj,
+- část si třídy je velmi jistá, i když důkazy nejsou silné,
+- někteří žáci jsou opatrní, ale neumí to vysvětlit.
+
+Test může pomoci odhalit právě tyto rozdíly.
+
+Ukáže, jestli problém spočívá spíš v práci s důkazy, v příliš rychlém zobecňování, nebo v nejistotě při formulování závěrů.
