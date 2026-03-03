@@ -33,7 +33,7 @@ Smyslem je nabídnout nástroj, který může pomoci lépe zacílit výuku.
 
 ## Jak bude výzkum probíhat?
 
-- **Kdo?** 9. ročník ZŠ a všechny ročníky SŠ
+- **Kdo?** 2. stupeň ZŠ a všechny ročníky SŠ
 - **Čas:** cca 30–45 minut
 - **Jak?** Online test, který žáci vyplní na počítači, tabletu nebo telefonu.
     1. Obdržíte unikátní odkaz (a QR kód).
