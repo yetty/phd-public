@@ -47,6 +47,8 @@ help cooperating teachers adapt or discuss the work in their classrooms.
   issues after revision.
 - 030 chapter extended on 2026-06-16 with three public-safe item examples
   and item-level aggregate response patterns.
+- 030 sample composition tables added on 2026-06-16 using public-safe
+  aggregate grade and gender summaries.
 
 ## Active Work
 

@@ -9,8 +9,8 @@
 - Core purpose: share preliminary PhD findings, open the work to
   comments, and return useful materials to cooperating Czech teachers.
 - Source chapters cover HPT/extremism and epistemic knowledge; the 030
-  chapter now has final findings and three public-safe item examples backed
-  by aggregate RDS.
+  chapter now has final findings, sample composition tables, and three
+  public-safe item examples backed by aggregate RDS.
 - `docs/` contains the rendered GitHub Pages output.
 
 ## Active Work

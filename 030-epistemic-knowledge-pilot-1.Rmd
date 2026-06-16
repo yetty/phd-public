@@ -149,6 +149,21 @@ item_examples <- ek_public$item_examples
 item_value <- function(item, column) {
   item_examples[item_examples$item == item, column][[1]]
 }
+
+sample_by_grade <- ek_public$sample_by_grade |>
+  transmute(
+    `Stupeň` = school_level,
+    `Ročník` = grade,
+    `Počet žáků` = n,
+    `Podíl` = paste0(pct, " %")
+  )
+
+sample_by_gender <- ek_public$sample_by_gender |>
+  transmute(
+    `Pohlaví` = gender,
+    `Počet žáků` = n,
+    `Podíl` = paste0(pct, " %")
+  )
 ```
 
 ### Jak výzkum probíhal?
@@ -168,6 +183,31 @@ proč ano nebo proč ne.
 Je to jen jeden výsek historického myšlení. V hodině samozřejmě potřebujeme
 i kontext, porovnávání pramenů a vlastní výklad. Tady jsem si ale záměrně
 vzal užší otázku: *opravňuje dostupný důkaz právě k tomuto tvrzení?*
+
+### Kdo byl ve vzorku?
+
+Ve výsledcích níže pracuji s `r n_students` žáky po vyčištění dat. Vzorek
+byl složen hlavně ze žáků druhého stupně základních škol; menší část tvoří
+španělští žáci z odpovídajícího ročníku ESO. Složení podle ročníku a
+pohlaví ukazují následující tabulky.
+
+**Podle ročníku**
+
+```{r ek_sample_by_grade, echo=FALSE}
+knitr::kable(
+  sample_by_grade,
+  align = c("l", "l", "r", "r")
+)
+```
+
+**Podle pohlaví**
+
+```{r ek_sample_by_gender, echo=FALSE}
+knitr::kable(
+  sample_by_gender,
+  align = c("l", "r", "r")
+)
+```
 
 ### Výsledky
 
