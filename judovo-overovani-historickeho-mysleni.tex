@@ -366,6 +366,9 @@
 
 % Define colors for text boxes
 \definecolor{grey}{HTML}{F5F5F5}
+\definecolor{boxgreen}{HTML}{E6FFED}
+\definecolor{boxred}{HTML}{FFE6E6}
+\definecolor{boxblue}{HTML}{E6F2FF}
 
 % Define text box environments
 \newmdenv[
@@ -373,6 +376,21 @@
 	backgroundcolor=grey,
 	frametitlebackgroundcolor=grey,
 ]{greybox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxgreen,
+	frametitlebackgroundcolor=boxgreen,
+]{greenbox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxred,
+	frametitlebackgroundcolor=boxred,
+]{redbox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxblue,
+	frametitlebackgroundcolor=boxblue,
+]{bluebox}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -980,10 +998,8 @@ Jinak řečeno: žák často správně vidí, že \emph{něco} v prameni je, ale
 příliš rychlý a silný závěr. Nebo naopak: je opatrný, ale neumí vysvětlit, proč
 pramen závěr nepodporuje.
 
-\protect\phantomsection\label{pythbox}
 Umí žáci rozlišit, kdy je tvrzení o minulosti opravdu opřené o pramen?
 
-\protect\phantomsection\label{pythbox}
 \textbf{Žáci v průměru zvládli méně než polovinu rozhodnutí.} Samotné
 znalosti to nevysvětlují. Nejzajímavější je, že odpověď
 a důvod se často rozešly. Někdy žák špatně rozhodl, ale vybral důvod,
@@ -1067,6 +1083,64 @@ odpovědi se může objevit dobrý důvod a špatné rozhodnutí. V jiné může
 správné rozhodnutí dosaženo zkratkou - třeba automatickou důvěrou v
 úředně znějící text, místo sledování toho, co přesně dokládá.
 
+\subsection{Jak vypadaly konkrétní úlohy?}\label{jak-vypadaly-konkruxe9tnuxed-uxfalohy}
+
+Celý test zatím nezveřejňuji, protože část položek se musí přepsat. Pro
+představu ale uvádím tři příklady. Neberte je jako hotové úlohy, spíš jako
+ukázku toho, jaký typ uvažování test zachycoval.
+
+Žáci četli krátký zápis farmáře z vesnice: řeka vystoupila až ke
+dveřím stodoly a farmář napsal, že šlo \enquote{asi} o nejhorší povodeň za
+posledních padesát let. Otázka zněla, zda tento zápis podporuje tvrzení
+historika:
+\emph{Povodeň byla nejhorší za padesát let.}
+
+Správné řešení bylo, že ne: zápis ukazuje, že povodeň byla vážná, ale
+slovo \enquote{asi} a absence srovnání s jinými povodněmi neumožňují tak jistý
+závěr. Správné rozhodnutí i dobrý důvod současně vybralo jen
+9 \% žáků. Dalších
+25.2 \% mělo špatné hlavní
+rozhodnutí, ale zvolilo důvod, který dával z hlediska práce s důkazem
+smysl.
+
+Pro výuku: žáci potřebují trénovat rozdíl mezi
+\emph{pramen naznačuje} a \emph{pramen dokládá}. Zároveň je fér dodat, že tato
+položka v pilotu fungovala problematicky a patří mezi ty, které budu
+přepisovat.
+
+V jiné úloze žáci četli fiktivní oficiální zprávu ministerstva školství.
+Zpráva tvrdila, že nový školní systém byl mimořádně úspěšný, počet
+zapsaných žáků vzrostl o 40 \% a učitelé jsou spokojení. Úkolem bylo
+posoudit, zda zpráva dokazuje, že reforma byla skutečně úspěšná.
+
+Nejlepší odpověď byla opět opatrná: zpráva je důležitý pramen, ale její
+autor má zájem prezentovat vlastní reformu pozitivně. Obě části úlohy
+zvládlo 9.7 \% žáků.
+Naopak 38.2 \% odpovědí
+ukázalo zajímavý rozpor: hlavní rozhodnutí bylo špatně, ale zvolený důvod
+už mířil k relevantnímu problému se záměrem zdroje.
+
+Ve výuce se u podobných textů vyplatí neptat se jen: \emph{Je to pravda?} Lepší
+otázka zní: \emph{Co tento zdroj dokládá bezpečně a u čeho bychom potřebovali
+ověření z jiného zdroje?} I tato položka ale v pilotu potřebuje revizi,
+protože nedokázala žáky rozlišit tak čistě, jak by měla.
+
+Třetí příklad pracoval se dvěma prameny. Královský dekret z roku 70 nařídil
+stavbu pevnosti u Horské soutěsky. Cestovatelův deník z roku 75 ale říkal,
+že cestovatel na místě žádnou pevnost neviděl a místní pastevci tvrdili,
+že tam nikdy nestála. Žádné další dokumenty se nedochovaly.
+
+Nejlepší závěr zněl: panovník stavbu nařídil, ale dostupné důkazy
+naznačují, že pevnost pravděpodobně postavena nebyla. Tady obě části úlohy
+zvládlo 33.1 \%
+žáků, tedy výrazně více než v předchozích dvou příkladech. Přesto
+41.7 \% odpovědí
+netrefilo ani rozhodnutí, ani zdůvodnění.
+
+Didakticky je zajímavé, že nejde jen o hledání \enquote{správnějšího} pramene.
+Dekret dokládá záměr. Pozdější deník a svědectví místních dokládají, že
+realita mohla být jiná. Historický závěr musí zohlednit obě věci najednou.
+
 \subsection{Co si z výsledků odnést?}\label{co-si-z-vuxfdsledkux16f-odnuxe9st}
 
 \begin{enumerate}
@@ -1090,7 +1164,6 @@ správné rozhodnutí dosaženo zkratkou - třeba automatickou důvěrou v
   mnoho problematických úloh, které je potřeba přepsat.
 \end{enumerate}
 
-\protect\phantomsection\label{pythbox}
 \begin{itemize}
 \tightlist
 \item
