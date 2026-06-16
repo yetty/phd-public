@@ -45,12 +45,14 @@ help cooperating teachers adapt or discuss the work in their classrooms.
 - 030 public results section drafted on 2026-06-16 using public-safe
   aggregate RDS exported from phd-030; reviewer pass found no blocking
   issues after revision.
+- 030 chapter extended on 2026-06-16 with three public-safe item examples
+  and item-level aggregate response patterns.
 
 ## Active Work
 
 1. Maintain the public Czech framing: accessible, transparent,
    practically useful, and explicit that the site is work in progress.
-2. Bring build documentation into sync with the actual Makefile and CI
+2. Keep build documentation in sync with the actual Makefile and CI
    workflow.
 3. Improve public-facing prose quality without changing substantive
    claims unless checked against source project evidence.
@@ -73,8 +75,7 @@ help cooperating teachers adapt or discuss the work in their classrooms.
 
 ## Known Issues
 
-- README build instructions mention `make html` and `make pdf`, but the
-  current Makefile does not define those targets.
+- There is no explicit local PDF Makefile target, although CI renders a PDF.
 - Some prose mixes earlier planned-study framing with later result
   reporting; future edits should make timeline and evidential status
   clear to public readers.

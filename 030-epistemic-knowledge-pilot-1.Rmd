@@ -101,11 +101,11 @@ Jinak řečeno: žák často správně vidí, že *něco* v prameni je, ale udě
 příliš rychlý a silný závěr. Nebo naopak: je opatrný, ale neumí vysvětlit, proč
 pramen závěr nepodporuje.
 
-:::{#pythbox .redbox title="Jaká byla otázka?"}
+:::{.redbox title="Jaká byla otázka?"}
 Umí žáci rozlišit, kdy je tvrzení o minulosti opravdu opřené o pramen?
 :::
 
-:::{#pythbox .greenbox title="Co jsme zjistili? (shrnutí)"}
+:::{.greenbox title="Co jsme zjistili? (shrnutí)"}
 **Žáci v průměru zvládli méně než polovinu rozhodnutí.** Samotné
 znalosti to nevysvětlují. Nejzajímavější je, že odpověď
 a důvod se často rozešly. Někdy žák špatně rozhodl, ale vybral důvod,
@@ -144,6 +144,11 @@ pattern_11 <- pattern_pct("11")
 revision_counts <- ek_public$technical_summary$item_revision_counts
 red_items <- revision_counts$n[revision_counts$severity == "red"][1]
 yellow_items <- revision_counts$n[revision_counts$severity == "yellow"][1]
+
+item_examples <- ek_public$item_examples
+item_value <- function(item, column) {
+  item_examples[item_examples$item == item, column][[1]]
+}
 ```
 
 ### Jak výzkum probíhal?
@@ -242,6 +247,70 @@ odpovědi se může objevit dobrý důvod a špatné rozhodnutí. V jiné může
 správné rozhodnutí dosaženo zkratkou - třeba automatickou důvěrou v
 úředně znějící text, místo sledování toho, co přesně dokládá.
 
+### Jak vypadaly konkrétní úlohy?
+
+Celý test zatím nezveřejňuji, protože část položek se musí přepsat. Pro
+představu ale uvádím tři příklady. Neberte je jako hotové úlohy, spíš jako
+ukázku toho, jaký typ uvažování test zachycoval.
+
+:::{.bluebox title="1. Deník a nejhorší povodeň"}
+Žáci četli krátký zápis farmáře z vesnice: řeka vystoupila až ke
+dveřím stodoly a farmář napsal, že šlo "asi" o nejhorší povodeň za
+posledních padesát let. Otázka zněla, zda tento zápis podporuje tvrzení
+historika:
+*Povodeň byla nejhorší za padesát let.*
+
+Správné řešení bylo, že ne: zápis ukazuje, že povodeň byla vážná, ale
+slovo "asi" a absence srovnání s jinými povodněmi neumožňují tak jistý
+závěr. Správné rozhodnutí i dobrý důvod současně vybralo jen
+`r item_value("D_DIARY_ENTRY_CERTAINTY", "pct_11")` % žáků. Dalších
+`r item_value("D_DIARY_ENTRY_CERTAINTY", "pct_01")` % mělo špatné hlavní
+rozhodnutí, ale zvolilo důvod, který dával z hlediska práce s důkazem
+smysl.
+
+Pro výuku: žáci potřebují trénovat rozdíl mezi
+*pramen naznačuje* a *pramen dokládá*. Zároveň je fér dodat, že tato
+položka v pilotu fungovala problematicky a patří mezi ty, které budu
+přepisovat.
+:::
+
+:::{.bluebox title="2. Oficiální zpráva ministerstva"}
+V jiné úloze žáci četli fiktivní oficiální zprávu ministerstva školství.
+Zpráva tvrdila, že nový školní systém byl mimořádně úspěšný, počet
+zapsaných žáků vzrostl o 40 % a učitelé jsou spokojení. Úkolem bylo
+posoudit, zda zpráva dokazuje, že reforma byla skutečně úspěšná.
+
+Nejlepší odpověď byla opět opatrná: zpráva je důležitý pramen, ale její
+autor má zájem prezentovat vlastní reformu pozitivně. Obě části úlohy
+zvládlo `r item_value("A_OFFICIAL_SCHOOL_REPORT", "pct_11")` % žáků.
+Naopak `r item_value("A_OFFICIAL_SCHOOL_REPORT", "pct_01")` % odpovědí
+ukázalo zajímavý rozpor: hlavní rozhodnutí bylo špatně, ale zvolený důvod
+už mířil k relevantnímu problému se záměrem zdroje.
+
+Ve výuce se u podobných textů vyplatí neptat se jen: *Je to pravda?* Lepší
+otázka zní: *Co tento zdroj dokládá bezpečně a u čeho bychom potřebovali
+ověření z jiného zdroje?* I tato položka ale v pilotu potřebuje revizi,
+protože nedokázala žáky rozlišit tak čistě, jak by měla.
+:::
+
+:::{.bluebox title="3. Dekret o stavbě pevnosti"}
+Třetí příklad pracoval se dvěma prameny. Královský dekret z roku 70 nařídil
+stavbu pevnosti u Horské soutěsky. Cestovatelův deník z roku 75 ale říkal,
+že cestovatel na místě žádnou pevnost neviděl a místní pastevci tvrdili,
+že tam nikdy nestála. Žádné další dokumenty se nedochovaly.
+
+Nejlepší závěr zněl: panovník stavbu nařídil, ale dostupné důkazy
+naznačují, že pevnost pravděpodobně postavena nebyla. Tady obě části úlohy
+zvládlo `r item_value("D_FORTRESS_CONSTRUCTION_ABSENCE", "pct_11")` %
+žáků, tedy výrazně více než v předchozích dvou příkladech. Přesto
+`r item_value("D_FORTRESS_CONSTRUCTION_ABSENCE", "pct_00")` % odpovědí
+netrefilo ani rozhodnutí, ani zdůvodnění.
+
+Didakticky je zajímavé, že nejde jen o hledání "správnějšího" pramene.
+Dekret dokládá záměr. Pozdější deník a svědectví místních dokládají, že
+realita mohla být jiná. Historický závěr musí zohlednit obě věci najednou.
+:::
+
 ### Co si z výsledků odnést?
 
 1. **Nestačí se ptát jen na odpověď.** U úloh s prameny je velmi užitečné
@@ -257,7 +326,7 @@ správné rozhodnutí dosaženo zkratkou - třeba automatickou důvěrou v
    Proto celý test zatím nezveřejňuji a nedávám k použití. Je v něm příliš
    mnoho problematických úloh, které je potřeba přepsat.
 
-:::{#pythbox .bluebox title="Zkuste ve výuce"}
+:::{.bluebox title="Zkuste ve výuce"}
 - Nechte žáky podtrhnout slova v prameni, která je opravňují k závěru.
 - Dejte jim tři možnosti: *pramen dokládá*, *pramen naznačuje*, *z pramene
   to nelze říci*.

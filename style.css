@@ -71,6 +71,29 @@ div.Summary {
 
 /* End of green text box */
 
+/* Blue text box */
+.bluebox {
+  display: block;
+  margin-bottom: 10px;
+  background-color: #e6f2ff;
+}
+
+.bluebox p {
+  padding: 15px 15px 15px 15px;
+}
+
+.bluebox:before {
+  content: attr(title);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px 5px 15px;
+  border-bottom: solid 1px #000000;
+  font-weight: bold;
+}
+
+/* End of blue text box */
+
 /* Red text box */
 .redbox {
   display: block;

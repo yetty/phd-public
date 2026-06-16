@@ -20,11 +20,8 @@ and the memoiR/memoir LaTeX class.
 ## Build
 
 ```bash
-# Render HTML (gitbook)
-make html
-
-# Render PDF (memoir class)
-make pdf
+# Render HTML (gitbook) into docs/
+make build
 ```
 
 Output goes to `docs/` (served via GitHub Pages with CNAME
@@ -36,6 +33,8 @@ Output goes to `docs/` (served via GitHub Pages with CNAME
 - `latex/` - custom LaTeX preamble and class files
 - `images/` - cover and logo images
 - `data/` - data files used in chapters
+- `scripts/update_030_public_data.R` - refresh public-safe 030 aggregate
+  results from the phd-030 analysis export
 - `references.bib` - chapter bibliographies
 - `docs/` - rendered output (HTML)
 - `AGENTS.md` / `CLAUDE.md` - project-specific agent instructions

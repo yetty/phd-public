@@ -8,6 +8,9 @@
 
 % Define colors for text boxes
 \definecolor{grey}{HTML}{F5F5F5}
+\definecolor{boxgreen}{HTML}{E6FFED}
+\definecolor{boxred}{HTML}{FFE6E6}
+\definecolor{boxblue}{HTML}{E6F2FF}
 
 % Define text box environments
 \newmdenv[
@@ -15,3 +18,18 @@
 	backgroundcolor=grey,
 	frametitlebackgroundcolor=grey,
 ]{greybox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxgreen,
+	frametitlebackgroundcolor=boxgreen,
+]{greenbox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxred,
+	frametitlebackgroundcolor=boxred,
+]{redbox}
+\newmdenv[
+	style=boxstyle,
+	backgroundcolor=boxblue,
+	frametitlebackgroundcolor=boxblue,
+]{bluebox}
