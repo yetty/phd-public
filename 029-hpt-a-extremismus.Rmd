@@ -4,7 +4,7 @@ Existující modely historického myšlení pracují s konceptem tzv. dobových 
 
 Jedním z nástrojů, který se o to pokouší, je tzv. Historical Perspective Taking (HPT) dotazník [@Hartmann_Hasselhorn2008Historical]. Má solidní empirické podložení a úspěšně ho adaptovaly i další výzkumy [@Huijgen_et_al2014Testing; @Huijgen_et_al2017Toward]. 
 
-Zdá se mi ale, že má jeden zásadní nedostatek – nijak nezohledňuje současné perspektivy žáků. Jinými slovy: žák, který dosáhne lepšího výsledku v HPT, nemusí ve skutečnosti vykazovat lepší porozumění lidem v minulosti. Může výsledku dosáhnout proto, že nepřejímá implicitní předpoklad současné perspektivy HPT – tedy že současná perspektiva všech žáků je *"nacismus byl špatný"*. 
+Zdá se mi ale, že má jeden zásadní nedostatek - nijak nezohledňuje současné perspektivy žáků. Jinými slovy: žák, který dosáhne lepšího výsledku v HPT, nemusí ve skutečnosti vykazovat lepší porozumění lidem v minulosti. Může výsledku dosáhnout proto, že nepřejímá implicitní předpoklad současné perspektivy HPT - tedy že současná perspektiva všech žáků je *"nacismus byl špatný"*.
 
 Jak výsledky ovlivňují právě názory (a perspektiva) žáka, bych chtěl ověřit následujícím výzkumem.
 
@@ -12,14 +12,14 @@ Jak výsledky ovlivňují právě názory (a perspektiva) žáka, bych chtěl ov
 
 ### Plán a cíle výzkumu
 
-**Hlavní cíl:** Ověřit, jestli a jak moc mohou dnešní postoje žáků (příklon k autoritarismu, normalizace nacismu) ovlivnit výsledky ve validovaném nástroji na měření historických perspektiv – tedy budit dojem dobrého historického myšlení jen proto, že jejich názory souzní s názory tehdejších aktérů.
+**Hlavní cíl:** Ověřit, jestli a jak moc mohou dnešní postoje žáků (příklon k autoritarismu, normalizace nacismu) ovlivnit výsledky ve validovaném nástroji na měření historických perspektiv - tedy budit dojem dobrého historického myšlení jen proto, že jejich názory souzní s názory tehdejších aktérů.
 
 Kromě toho by výzkum měl čéskym učitelům přispět
 
 - ověřeným českým překladem HPT dotazníku;
 - ověřeným nástroje pro ověření současných perspektiv žáků (FR-LF, KSA-3, SDR-5)
 
-Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejich  žáci jsou jak se schopností zaujmout dobové perspektivy, tak ohledně příklonu k různým autoritářským postojům – a v konečném důsledku tedy pomoci lépe přizpůsobit výuku moderních a soudobých dějin potřebám konkrétní třídy.
+Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejich  žáci jsou jak se schopností zaujmout dobové perspektivy, tak ohledně příklonu k různým autoritářským postojům - a v konečném důsledku tedy pomoci lépe přizpůsobit výuku moderních a soudobých dějin potřebám konkrétní třídy.
 
 #### Jak to bude prakticky probíhat
 
@@ -30,12 +30,12 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 **Jednotlivé části:**
 
 1. **Sběr základních údajů:** dotazník je anonymní, žáci pouze zadají svou třídu, pohlaví a poslední známku z dějepisu.
-2. **Mini-test znalostí (6 položek)** – pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. [@Huijgen_et_al2017Toward]
-3. **Úkol na dobové perspektivy** – český překlad ověřeného nástroje, který je postaven na fiktiní situaci z meziválečného Německa. [@Hartmann_Hasselhorn2008Historical]
-4. **Krátký anonymní dotazník postojů** – obsahuje náhodně seřazené položky tří nástrojů:
+2. **Mini-test znalostí (6 položek)** - pro zjištění vlivu znalostí na schopnost zaujmout dobové perspektivy. [@Huijgen_et_al2017Toward]
+3. **Úkol na dobové perspektivy** - český překlad ověřeného nástroje, který je postaven na fiktiní situaci z meziválečného Německa. [@Hartmann_Hasselhorn2008Historical]
+4. **Krátký anonymní dotazník postojů** - obsahuje náhodně seřazené položky tří nástrojů:
 	- FR-LF (mini verze o 6 položkách) - měří postoje k autoritářské vládě a zlehčování nacismu [@Decker_et_al2013Rechtsextremismus]
-	- KSA-3 – měří ultra-pravicovou názorovou orientaci [@Beierlein_et_al2014Die_Kurzskala;@Nießen_et_al2019An_English]
-	- SDR-5 – měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře [@Hays_et_al1989A_Five]
+	- KSA-3 - měří ultra-pravicovou názorovou orientaci [@Beierlein_et_al2014Die_Kurzskala;@Nießen_et_al2019An_English]
+	- SDR-5 - měří sociální žádoucnost, tedy jak moc ovlivňuje odpovědi žáků to, aby vypadali dobře [@Hays_et_al1989A_Five]
 
 
 **Co bude dělat učitel?**
@@ -45,7 +45,7 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 
 **Etika a bezpečí**
 
-- Účast je **dobrovolná a anonymní**, žák může vyplňování odmítnout – nenuťte ho, prosím
+- Účast je **dobrovolná a anonymní**, žák může vyplňování odmítnout - nenuťte ho, prosím
 - Pokud by některé otázky vyvolaly reakci žáků, doporučuji zařadit krátký bezpečný prostor pro reflexi a sdilení
 
 
@@ -61,25 +61,25 @@ Tyto nástroje by měly učitelům pomoci lépe diagnostikovat, jak na tom jejic
 
 ### Předpokládaná zjištění
 
-#### Scénář A – potvrzení vlivu postojů žáka
+#### Scénář A - potvrzení vlivu postojů žáka
 
 Pracovní hypotéza je, že příklon žáka k extremistickým postojům může kontaminovat výsledky testu na schopnost zaujmout dobové perspektivy. Pokud se to potvrdí, bude to pro nás:
 
 1. signál, že při výuce dějepisu je důležité s postoji žáka pracovat a vědomě je reflektovat, protože mohou ovlivnit nejen jeho přemýšlení o minulosti, ale i to, jak jeho výstupy působí skrytě na učitele;
 2. solidní základ pro přemýslení o tom, jak konstruovat ověřování schopnosti zaujmout dobové perspektivy, které by nebylo náchylné na ovlivnění postoji žáka.
 
-#### Scénář B – vliv postojů žáka se neprokáže
+#### Scénář B - vliv postojů žáka se neprokáže
 
-Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to trochu zklamání a překvapení. Nicméně i to bude cenné zjištění – a hlavně, zůstane nám validovaný a funkční nástroj, pomocí kterého bude možné schopnost žáků zaujmout dobovou perspektivu ověřovat.
+Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to trochu zklamání a překvapení. Nicméně i to bude cenné zjištění - a hlavně, zůstane nám validovaný a funkční nástroj, pomocí kterého bude možné schopnost žáků zaujmout dobovou perspektivu ověřovat.
 
 
 #### FAQ pro učitele
 
-**Není to politický průzkum?** – Ne. Nezajímají mne přímo politické postoje žáků, ale to, jak mohou ovlivnit (kontaminovat) ověřování schopnosti zaujmout dobovou prespektivu.
+**Není to politický průzkum?** - Ne. Nezajímají mne přímo politické postoje žáků, ale to, jak mohou ovlivnit (kontaminovat) ověřování schopnosti zaujmout dobovou prespektivu.
 
-**Proč se pracuje s "fiktivní" situací bez primárního pramene?** – Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.  
+**Proč se pracuje s "fiktivní" situací bez primárního pramene?** - Autoři původního nástroje HPT vycházeli z předpokladu, že při použití primárního pramene by výsledky mohla do velké míry ovlivnit schopnost žáků číst dobový pramen.
 
-**Můžu úlohy a dotazníky nějak připomínkovat?** – Rozhodně! Pokud máte návrh na vylepšení překladu nebo formulace, napište mi na [juda.kaleta@gmail.com](mailto:juda.kaleta@gmail.com). Zároveň ale platí, že se snažím být věrný originálu – takže vylepšení, které se budou příliš vzdalovat od původní verze, sice ocením a poznamenám si, ale spíše nebudu moci začlenit.
+**Můžu úlohy a dotazníky nějak připomínkovat?** - Rozhodně! Pokud máte návrh na vylepšení překladu nebo formulace, napište mi na [juda.kaleta@gmail.com](mailto:juda.kaleta@gmail.com). Zároveň ale platí, že se snažím být věrný originálu - takže vylepšení, které se budou příliš vzdalovat od původní verze, sice ocením a poznamenám si, ale spíše nebudu moci začlenit.
 
 
 
@@ -87,13 +87,13 @@ Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to troch
 
 V dějepise se často snažíme žákům pomoci porozumět lidem v minulosti v jejich dobovém kontextu, nikoli je hodnotit dnešníma očima. Tuto schopnost se výzkumně snaží zachytit test Historical Perspective Taking (HPT). Jenže...
 
-:::{#pythbox .redbox title="Jaká byla otázka?"}
+:::{.redbox title="Jaká byla otázka?"}
 Nemůže žák dosáhnout dobrého výsledku v testu dobových perspektiv spíše proto, že jeho **současné postoje souzní s postoji historických aktérů**, než proto, že skutečně dobře historicky uvažuje?
 :::
 
-Konkrétně: nemohou zda autoritářské nebo pro-nacistické postoje „vylepšit“ výsledek v úloze zaměřené na porozumění meziválečnému Německu?
+Konkrétně: nemohou zda autoritářské nebo pro-nacistické postoje „vylepšit" výsledek v úloze zaměřené na porozumění meziválečnému Německu?
 
-:::{#pythbox .greenbox title="Co jsme zjistili? (shrnutí)"}
+:::{.greenbox title="Co jsme zjistili? (shrnutí)"}
 **Ne, předpoklad, že žáci s autoritářskými postoji dosáhnou lepších výsledků v HPT testu, se nepotvrdil.** Korelace mezi postoji a výsledky v HPT byla velmi slabá až nulová. To znamená, že výsledky v HPT testu nejsou kontaminovány současnými postoji žáků. Dobrá zpráva pro učitele dějepisu - výsledky v HPT testu skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. **Můžete ho tedy bez obav používat jako nástroj pro diagnostiku historického myšlení vašich žáků.**
 :::
 
@@ -305,7 +305,7 @@ ggplot(hpt_data %>% mutate(FRLF = rowMeans(select(., RD1:RD3, NS1:NS3), na.rm = 
     title = "Vztah mezi ideologickými postoji a HPT",
     subtitle = "Scatter plot s lineární regresní přímkou",
     x = "Ideologické postoje (FR-LF mini, vyšší = více autoritářské)",
-    y = "Historical Perspective Taking (HPT – celkové skóre)"
+    y = "Historical Perspective Taking (HPT - celkové skóre)"
   ) +
   theme_minimal()
 ```
@@ -340,7 +340,7 @@ kableExtra::kbl(
     full_width = FALSE
   ) |>
   kableExtra::footnote(
-    general = "Pozn.: POP* = absence presentistického (populistického) uvažování; ROA = role aktéra; CONT = kontextualizace. FR-LF mini je průměr RD1–RD3 a NS1–NS3. KN = mini test znalostí. Korelace jsou pouze deskriptivní (bez korekce na shlukování ve třídách).",
+    general = "Pozn.: POP* = absence presentistického (populistického) uvažování; ROA = role aktéra; CONT = kontextualizace. FR-LF mini je průměr RD1-RD3 a NS1-NS3. KN = mini test znalostí. Korelace jsou pouze deskriptivní (bez korekce na shlukování ve třídách).",
     general_title = ""
   )
 
