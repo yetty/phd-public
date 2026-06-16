@@ -42,6 +42,9 @@ help cooperating teachers adapt or discuss the work in their classrooms.
 - Epistemic-knowledge pilot chapter exists as an initial teacher-facing
   explanation and recruitment/participation text.
 - Project instruction and status files were initialised on 2026-06-16.
+- 030 public results section drafted on 2026-06-16 using public-safe
+  aggregate RDS exported from phd-030; reviewer pass found no blocking
+  issues after revision.
 
 ## Active Work
 
@@ -53,6 +56,8 @@ help cooperating teachers adapt or discuss the work in their classrooms.
    claims unless checked against source project evidence.
 4. Keep generated output (`docs/`) aligned with source `.Rmd` files after
    substantive edits.
+5. After final June data lock, rerun `scripts/update_030_public_data.R`
+   and rebuild the book so 030 numbers use the final export.
 
 ## Technical Notes
 
@@ -60,6 +65,7 @@ help cooperating teachers adapt or discuss the work in their classrooms.
 - Main source file: `index.Rmd`.
 - Output configuration: `_bookdown.yml`, `_output.yml`.
 - Local build target currently available: `make build`.
+- 030 public data refresh: `Rscript scripts/update_030_public_data.R`.
 - CI render: `.github/workflows/memoir.yml` renders PDF and gitbook on
   pushes to `main` or `master`.
 - Deployment output: `docs/`.
