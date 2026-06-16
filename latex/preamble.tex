@@ -1,6 +1,11 @@
 % Add LaTeX code into the preamble of the document here
 \hyphenation{bio-di-ver-si-ty sap-lings}
 
+% Pandoc >= 3.6 may wrap images in \pandocbounded. The bundled
+% memoiR-era LaTeX template predates that macro, so define a no-op
+% compatibility wrapper for PDF builds.
+\providecommand{\pandocbounded}[1]{#1}
+
 % Define colors for text boxes
 \definecolor{grey}{HTML}{F5F5F5}
 
