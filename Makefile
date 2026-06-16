@@ -12,3 +12,6 @@ serve:
 
 build:
 	Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
+
+projects-check:
+	@echo "No project registry in phd-public; skipping projects-check."

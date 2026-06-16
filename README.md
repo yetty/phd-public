@@ -32,14 +32,24 @@ Output goes to `docs/` (served via GitHub Pages with CNAME
 
 ## Structure
 
-- `_bookdown.yml` / `_output.yml` — bookdown configuration
-- `latex/` — custom LaTeX preamble and class files
-- `images/` — cover and logo images
-- `data/` — data files used in chapters
-- `references.bib` — chapter bibliographies
-- `docs/` — rendered output (HTML)
+- `_bookdown.yml` / `_output.yml` - bookdown configuration
+- `latex/` - custom LaTeX preamble and class files
+- `images/` - cover and logo images
+- `data/` - data files used in chapters
+- `references.bib` - chapter bibliographies
+- `docs/` - rendered output (HTML)
+- `AGENTS.md` / `CLAUDE.md` - project-specific agent instructions
+- `status.md` / `project_status.md` - current state and running log
+
+## Project Notes
+
+This site is written primarily for Czech history teachers, teacher
+educators, and scholars. It should preserve the public aims stated in
+`index.Rmd`: make English-language PhD work accessible in Czech, invite
+open-science feedback, and return usable materials to cooperating
+teachers.
 
 ---
 
 **Location**: `~/PhD/projects/phd-public/`
-**Last Updated**: 2026-04-07
+**Last Updated**: 2026-06-16
