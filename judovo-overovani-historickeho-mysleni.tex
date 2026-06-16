@@ -351,13 +351,18 @@
 
 \author{Juda Kaleta}
 
-\date{2026-04-17}
+\date{2026-06-16}
 
 
 % Include headers (preamble.tex) here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Add LaTeX code into the preamble of the document here
 \hyphenation{bio-di-ver-si-ty sap-lings}
+
+% Pandoc >= 3.6 may wrap images in \pandocbounded. The bundled
+% memoiR-era LaTeX template predates that macro, so define a no-op
+% compatibility wrapper for PDF builds.
+\providecommand{\pandocbounded}[1]{#1}
 
 % Define colors for text boxes
 \definecolor{grey}{HTML}{F5F5F5}
@@ -466,7 +471,7 @@ Díky a ať je vám obsah k užitku.
 
 \chapter{HPT a extremismus}\label{hpt-a-extremismus}
 
-Existující modely historického myšlení pracují s konceptem tzv. dobových perspektiv (\emph{historical perspectives}). Projekt Dějepis+ je rámoval otázkou \emph{\enquote{Jak lépe porozumět lidem, kteří žili v minulosti?}} \autocite[ p.~10]{Cinatl2021Metodika}. Jak ale, že žákům se porozumět lidem v minulosti daří?
+Existující modely historického myšlení pracují s konceptem tzv. dobových perspektiv (\emph{historical perspectives}). Projekt Dějepis+ je rámoval otázkou \emph{\enquote{Jak lépe porozumět lidem, kteří žili v minulosti?}} \autocite[10]{Cinatl2021Metodika}. Jak ale, že žákům se porozumět lidem v minulosti daří?
 
 Jedním z nástrojů, který se o to pokouší, je tzv. Historical Perspective Taking (HPT) dotazník \autocite{Hartmann_Hasselhorn2008Historical}. Má solidní empirické podložení a úspěšně ho adaptovaly i další výzkumy \autocite{Huijgen_et_al2014Testing,Huijgen_et_al2017Toward}.
 
@@ -603,12 +608,12 @@ Pokud se hypotéza vlivu postojů žáka na výsledky neprokáže, bude to troch
 
 V dějepise se často snažíme žákům pomoci porozumět lidem v minulosti v jejich dobovém kontextu, nikoli je hodnotit dnešníma očima. Tuto schopnost se výzkumně snaží zachytit test Historical Perspective Taking (HPT). Jenže\ldots{}
 
-\phantomsection\label{pythbox}
+\protect\phantomsection\label{pythbox}
 Nemůže žák dosáhnout dobrého výsledku v testu dobových perspektiv spíše proto, že jeho \textbf{současné postoje souzní s postoji historických aktérů}, než proto, že skutečně dobře historicky uvažuje?
 
 Konkrétně: nemohou zda autoritářské nebo pro-nacistické postoje „vylepšit`` výsledek v úloze zaměřené na porozumění meziválečnému Německu?
 
-\phantomsection\label{pythbox}
+\protect\phantomsection\label{pythbox}
 \textbf{Ne, předpoklad, že žáci s autoritářskými postoji dosáhnou lepších výsledků v HPT testu, se nepotvrdil.} Korelace mezi postoji a výsledky v HPT byla velmi slabá až nulová. To znamená, že výsledky v HPT testu nejsou kontaminovány současnými postoji žáků. Dobrá zpráva pro učitele dějepisu - výsledky v HPT testu skutečně odrážejí schopnost žáků zaujmout dobové perspektivy, nikoliv jejich současné názory. \textbf{Můžete ho tedy bez obav používat jako nástroj pro diagnostiku historického myšlení vašich žáků.}
 
 \subsection{Jak výzkum probíhal?}\label{jak-vuxfdzkum-probuxedhal}
@@ -808,11 +813,19 @@ Tyto analýzy vedly ke stejným závṙům jako jednoduché grafy výše, navíc
 
 \chapter{Umí žáci vyvozovat oprávněné závěry z pramenů?}\label{umuxed-ux17euxe1ci-vyvozovat-opruxe1vnux11bnuxe9-zuxe1vux11bry-z-pramenux16f}
 
-\emph{Argumentuj na základě pramene\ldots{} Opravdu to pramen říká? \ldots{} Není to už jen interpretace?}
+\emph{Argumentuj na základě pramene\ldots{} Opravdu to pramen říká? \ldots{} Není to
+už jen interpretace?}
 
-V hodinách dějepisu a zejména v badatelské výuce po žácích často chceme, aby vyvozovali své závěry z pramenů. Jenže není vždy snadné poznat, jestli to skutečne umí - schopnost vyvozovat oprávněné závěry z pramenů se ztrácí pod vrstvou dalších dovedností a znalostí, jako je obecné čtení s porozuměním, schopnost pracovat s historickými prameny, schopnost formulovat závěry a argumenty, atd.
+V hodinách dějepisu a zejména v badatelské výuce po žácích často
+chceme, aby vyvozovali své závěry z pramenů. Jenže není vždy snadné
+poznat, jestli to skutečně umí - schopnost vyvozovat oprávněné závěry z
+pramenů se ztrácí pod vrstvou dalších dovedností a znalostí, jako je
+obecné čtení s porozuměním, schopnost pracovat s historickými prameny,
+schopnost formulovat závěry a argumenty, atd.
 
-Tento výzkum si klade za cíl vytvořit nástroj, který by nám pomohl zjistit, jak žáci závěry z pramenů vyvozují, aniž by v tom hrály vliv jiné faktory.
+Tento výzkum si klade za cíl vytvořit nástroj, který by nám pomohl
+zjistit, jak žáci závěry z pramenů vyvozují, aniž by v tom hrály roli
+jiné faktory.
 
 Nejde o test faktů.
 
@@ -820,7 +833,9 @@ Nejde o zkoušení znalostí učiva.
 
 Jde o to, jak žáci uvažují nad zdroji a tvrzeními o minulosti.
 
-\section{Proč by to pro učitele mohlo být užitečné?}\label{proux10d-by-to-pro-uux10ditele-mohlo-buxfdt-uux17eiteux10dnuxe9}
+\section{Plánovaný výzkum}\label{pluxe1novanuxfd-vuxfdzkum-1}
+
+\subsection{Proč by to pro učitele mohlo být užitečné?}\label{proux10d-by-to-pro-uux10ditele-mohlo-buxfdt-uux17eiteux10dnuxe9}
 
 Zapojeným učitelům může výzkum přinést:
 
@@ -831,12 +846,13 @@ Zapojeným učitelům může výzkum přinést:
 \item
   srovnání různých tříd (pokud se zapojí více tříd),
 \item
-  podněty, kde mají žáci tendenci „přeskakovat`` k rychlým závěrům,
+  podněty, kde mají žáci tendenci \enquote{přeskakovat} k rychlým závěrům,
 \item
   konkrétní doporučení, jak tyto dovednosti dál rozvíjet.
 \end{itemize}
 
-Výsledkem nebude jen tabulka bodů, ale stručný a srozumitelný report pro Vaši třídu, který ukáže:
+Výsledkem nebude jen tabulka bodů, ale stručný a srozumitelný report pro
+Vaši třídu, který ukáže:
 
 \begin{itemize}
 \tightlist
@@ -851,14 +867,14 @@ Výsledkem nebude jen tabulka bodů, ale stručný a srozumitelný report pro Va
 Cílem není hodnotit učitele ani školu.
 Smyslem je nabídnout nástroj, který může pomoci lépe zacílit výuku.
 
-\section{Jak bude výzkum probíhat?}\label{jak-bude-vuxfdzkum-probuxedhat}
+\subsection{Jak bude výzkum probíhat?}\label{jak-bude-vuxfdzkum-probuxedhat}
 
 \begin{itemize}
 \tightlist
 \item
   \textbf{Kdo?} 2. stupeň ZŠ a všechny ročníky SŠ
 \item
-  \textbf{Čas:} cca 30--45 minut
+  \textbf{Čas:} cca 30-45 minut
 \item
   \textbf{Jak?} Online test, který žáci vyplní na počítači, tabletu nebo telefonu.
 
@@ -883,23 +899,24 @@ Smyslem je nabídnout nástroj, který může pomoci lépe zacílit výuku.
   \item
     Krátké základní údaje (anonymně).
   \item
-    Úkoly se zdroji a tvrzeními -- vybírají, zda je tvrzení oprávněné, a zdůvodňují proč.
+    Úkoly se zdroji a tvrzeními - vybírají, zda je tvrzení
+    oprávněné, a zdůvodňují proč.
   \item
-    Dvě složitější situace z „reálnějšího`` kontextu.
+    Dvě složitější situace z \enquote{reálnějšího} kontextu.
   \end{enumerate}
 \end{itemize}
 
 Účast žáků je dobrovolná a anonymní.
 
-\subsection{Ukázka úkolu}\label{ukuxe1zka-uxfakolu}
+\subsubsection{Ukázka úkolu}\label{ukuxe1zka-uxfakolu}
 
 \begin{figure}
 \centering
-\includegraphics{judovo-overovani-historickeho-mysleni_files/images/030-ukazka-testove-ulohy.png}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Ukázka úkolu}]{judovo-overovani-historickeho-mysleni_files/images/030-ukazka-testove-ulohy.png}}
 \caption{Ukázka úkolu}
 \end{figure}
 
-\section{Co jako zapojený učitel dostanu?}\label{co-jako-zapojenuxfd-uux10ditel-dostanu}
+\subsection{Co jako zapojený učitel dostanu?}\label{co-jako-zapojenuxfd-uux10ditel-dostanu}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -932,9 +949,11 @@ Smyslem je nabídnout nástroj, který může pomoci lépe zacílit výuku.
   Možnost konzultace výsledků (online / e-mailem).
 \end{enumerate}
 
-Kromě toho dobrý pocit z toho, že pomůžete ověřit nástroj, který může být užitečný pro širší komunitu učitelů. Podílíte se na výzkumu, který má ambici zlepšit způsob, jak ověřujeme práci žáků v dějepise.
+Kromě toho dobrý pocit z toho, že pomůžete ověřit nástroj, který může
+být užitečný pro širší komunitu učitelů. Podílíte se na výzkumu, který
+má ambici zlepšit způsob, jak ověřujeme práci žáků v dějepise.
 
-\subsection{K čemu to může být ve výuce?}\label{k-ux10demu-to-mux16fux17ee-buxfdt-ve-vuxfduce}
+\subsubsection{K čemu to může být ve výuce?}\label{k-ux10demu-to-mux16fux17ee-buxfdt-ve-vuxfduce}
 
 Možná znáte situace, kdy:
 
@@ -951,6 +970,150 @@ Možná znáte situace, kdy:
 Test může pomoci odhalit právě tyto rozdíly.
 
 Ukáže, jestli problém spočívá spíš v práci s důkazy, v příliš rychlém zobecňování, nebo v nejistotě při formulování závěrů.
+
+\section{Výsledky výzkumu}\label{vuxfdsledky-vuxfdzkumu-1}
+
+V testu se ukázalo, že mnoho žáků umí z pramene něco vyčíst, ale hůř už
+pozná, kdy je vyvozený závěr dostatečně podložený a kdy už je příliš silný.
+
+Jinak řečeno: žák často správně vidí, že \emph{něco} v prameni je, ale udělá z toho
+příliš rychlý a silný závěr. Nebo naopak: je opatrný, ale neumí vysvětlit, proč
+pramen závěr nepodporuje.
+
+\protect\phantomsection\label{pythbox}
+Umí žáci rozlišit, kdy je tvrzení o minulosti opravdu opřené o pramen?
+
+\protect\phantomsection\label{pythbox}
+\textbf{Žáci v průměru zvládli méně než polovinu rozhodnutí.} Samotné
+znalosti to nevysvětlují. Nejzajímavější je, že odpověď
+a důvod se často rozešly. Někdy žák špatně rozhodl, ale vybral důvod,
+který dával z hlediska práce s důkazem smysl. Jindy trefil odpověď, ale
+zdůvodnil ji chybně.
+
+\scriptsize
+
+\normalsize
+
+\subsection{Jak výzkum probíhal?}\label{jak-vuxfdzkum-probuxedhal-1}
+
+Test vyplnilo celkem 590 žáků. Některá vyplnění jsem musel
+vyřadit - typicky žáky, kteří celý test proletěli za pár desítek vteřin. Po tomto
+vyčištění zůstalo 524 z nich. Test byl anonymní, probíhal online a
+trval v průměru 21.6 minut.
+
+Není to reprezentativní vzorek českých žáků. Jsou to zapojené třídy a
+zapojení učitelé. Z výsledků nelze vyvozovat závěry, jak na tom \enquote{čeští žáci jsou}.
+
+Žáci v testu dostávali krátké situace: pramen nebo dvojici pramenů a k nim tvrzení.
+Jejich úkol byl rozhodnout, zda je tvrzení vzhledem k důkazům oprávněné, a vybrat důvod,
+proč ano nebo proč ne.
+
+Je to jen jeden výsek historického myšlení. V hodině samozřejmě potřebujeme
+i kontext, porovnávání pramenů a vlastní výklad. Tady jsem si ale záměrně
+vzal užší otázku: \emph{opravňuje dostupný důkaz právě k tomuto tvrzení?}
+
+\subsection{Výsledky}\label{vuxfdsledky-1}
+
+Žáci s tím měli zřetelné potíže. V průměru správně vyřešili asi
+39 \% otázek typu \enquote{lze toto tvrdit na základě pramene?}
+Medián byl 38 \%.
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/ek_score_distribution-1} \end{center}
+
+\normalsize
+
+Nejtěžší bylo pro žáky nepřidávat k prameni něco navíc. To mi přijde pro
+výuku docela podstatné. Právě tady často vznikají hezké, ale moc
+silné žákovské závěry, které často mohou přesvědčit i učitele.
+O něco lépe si žáci vedli tam, kde se ověřovalo, jestli se ukvapeně
+nepřikloní k jednomu prameni ze dvou vzájemně si odporujících.
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/ek_construct_summary-1} \end{center}
+
+\normalsize
+
+Faktické znalosti pomáhaly. Žáci, kteří lépe zvládli krátký mini-test
+znalostí, měli v průměru také lepší výsledek. Znalosti ale zachytily jen část rozdílů - přibližně
+14 \%, tedy poměrně málo. Spíše se v tom asi odráží
+obecná úroveň žáků, než že by znalosti s samotným uvažováním o pramenech přímo souvisely.
+
+Jinými slovy: lepší faktické znalosti vysvětlily jen část toho, proč
+někteří žáci uspěli lépe než jiní.
+
+\subsection{Nejzajímavější zjištění: odpověď a důvod se mohou rozejít}\label{nejzajuxedmavux11bjux161uxed-zjiux161tux11bnuxed-odpovux11bux10f-a-dux16fvod-se-mohou-rozejuxedt}
+
+Každá hlavní úloha měla dvě části. Nejdřív rozhodnutí. Potom zdůvodnění. A
+tady se ukázala věc, která mi přijde zajímavá: odpověď a důvod
+nejsou totéž.
+
+\scriptsize
+
+\begin{center}\includegraphics[width=0.8\linewidth]{judovo-overovani-historickeho-mysleni_files/figure-latex/ek_pattern_summary-1} \end{center}
+
+\normalsize
+
+Pouze 22.4 \% odpovědí mělo současně správné rozhodnutí i dobrý
+důvod. V 19.4 \% odpovědí bylo rozhodnutí špatně, ale důvod
+dával z hlediska práce s důkazem smysl. V 17.2 \% odpovědí to
+bylo obráceně: rozhodnutí správně, důvod slabý.
+
+Když vidíme jen výslednou odpověď, můžeme žáka snadno přecenit nebo
+podcenit. Graf výše shrnuje odpovědi, ne pevné typy žáků. V jedné
+odpovědi se může objevit dobrý důvod a špatné rozhodnutí. V jiné může být
+správné rozhodnutí dosaženo zkratkou - třeba automatickou důvěrou v
+úředně znějící text, místo sledování toho, co přesně dokládá.
+
+\subsection{Co si z výsledků odnést?}\label{co-si-z-vuxfdsledkux16f-odnuxe9st}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Nestačí se ptát jen na odpověď.} U úloh s prameny je velmi užitečné
+  chtít po žácích také důvod: \emph{Čím přesně můžeš z pramene podepřít svou odpověď?}
+\item
+  \textbf{Chybná odpověď nemusí znamenat špatné uvažování.} Někdy je dobré
+  hledat, jestli žák selhal v rozhodnutí, nebo v postupu, kterým si
+  rozhodnutí zdůvodnil.
+\item
+  \textbf{Práce s prameny potřebuje učit vyjadřovat a rozumět různým mírám jistoty.} Ve výuce má smysl
+  rozlišovat: \emph{pramen dokládá}, \emph{pramen naznačuje}, \emph{je to možné},
+  \emph{nevíme}, \emph{z tohoto pramene to říci nemůžeme}. To je slovní zásoba,
+  kterou řada žáku nemá, a přitom je pro práci s prameny zásadní.
+\item
+  \textbf{Současná pilotní verze není nástroj pro hodnocení škol, učitelů ani přesné srovnávání tříd.}
+  Proto celý test zatím nezveřejňuji a nedávám k použití. Je v něm příliš
+  mnoho problematických úloh, které je potřeba přepsat.
+\end{enumerate}
+
+\protect\phantomsection\label{pythbox}
+\begin{itemize}
+\tightlist
+\item
+  Nechte žáky podtrhnout slova v prameni, která je opravňují k závěru.
+\item
+  Dejte jim tři možnosti: \emph{pramen dokládá}, \emph{pramen naznačuje}, \emph{z pramene
+  to nelze říci}.
+\item
+  U silného závěru se ptejte: \emph{Jaký další pramen bychom potřebovali, aby
+  bylo možné tvrdit tohle s větší jistotou?}
+\end{itemize}
+
+\subsection{Co z toho plyne pro další výzkum?}\label{co-z-toho-plyne-pro-dalux161uxed-vuxfdzkum}
+
+Pilot mi ukázal dvě věci. Tenhle typ úloh má smysl. Zároveň je řadu z nich
+potřeba přepsat. Při kontrole, jak jednotlivé úlohy fungovaly, vyšlo 19 položek k
+přepracování a dalších 17 jako hraničních. U pilotu je to
+normální: některé úlohy se prostě nechovaly tak, jak měly.
+
+Hotový standardizovaný test z toho ještě není. I tak si myslím, že z toho plyne dobré zjištění
+pro výuku: stojí za to trénovat rozdíl mezi tím, co pramen
+dokládá, co jen naznačuje a co z něj říci nemůžeme. A stojí za to
+nehodnotit jen odpověď, ale i cestu, kterou se k ní žák dostal.
 
 \chapter*{Literatura}\label{literatura}
 \addcontentsline{toc}{chapter}{Literatura}
