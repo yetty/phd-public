@@ -4,8 +4,8 @@ Czech-facing bookdown site <https://phd.judakaleta.cz/> making the PhD
 work accessible to Czech history teachers, teacher educators and
 scholars: preliminary findings, materials, open-science process notes.
 
-**Status:** read `status.md` and `project_status.md` first; update them
-after meaningful changes.
+Hub: `README.md` (status, Next steps, Log). Read it first; at the end of
+a session update Next steps and Log. Overview: `overview.md`.
 
 ## Where things are
 
@@ -14,7 +14,7 @@ after meaningful changes.
 - `_bookdown.yml`, `_output.yml`; `references.bib` (project bib)
 - `docs/` and `_book/` - generated output, not for editing
 - Build: `make build` (targets `prepare`, `bib`, `serve`, `build`; the
-  README's `make html/pdf` do not exist). GitHub Actions renders and
+  old README's `make html/pdf` do not exist). GitHub Actions renders and
   deploys `docs/` to Pages on push.
 
 ## Project rules
