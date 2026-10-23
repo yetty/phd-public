@@ -10,7 +10,8 @@ a session update Next steps and Log. Overview: `overview.md`.
 ## Where things are
 
 - `index.Rmd` (setup, introduction), `029-hpt-a-extremismus.Rmd`,
-  `030-epistemic-knowledge-pilot-1.Rmd`, `99-references.Rmd`
+  `030-epistemic-knowledge-pilot-1.Rmd`, `041-zduvodnovani-z-pramenu.Rmd`,
+  `99-references.Rmd`
 - `_bookdown.yml`, `_output.yml`; `references.bib` (project bib)
 - `docs/` and `_book/` - generated output, not for editing
 - Build: `make build` (targets `prepare`, `bib`, `serve`, `build`; the

@@ -14,6 +14,9 @@ drive:
 > 2026-06-16, before the final phd-030 lock.
 
 ## Next steps
+- [ ] Check the rendered phd-041 page after CI deploys it
+  (<https://phd.judakaleta.cz/zduvodnovani-z-pramenu.html>), incl. the
+  cross-link to the 030 finding
 - [ ] Rerun `scripts/update_030_public_data.R` against the final locked
   phd-030 export and rebuild, so 030 numbers use the final data
 - [ ] Decide whether to add an explicit PDF Makefile target for local PDF
@@ -44,6 +47,8 @@ drive:
 - `index.Rmd`: site introduction and public aims
 - `029-hpt-a-extremismus.Rmd`, `030-epistemic-knowledge-pilot-1.Rmd`:
   chapter sources
+- `041-zduvodnovani-z-pramenu.Rmd`: teacher-facing call for phd-041
+  (open responses, Nov-Dec 2026)
 - `scripts/update_030_public_data.R`: refresh public-safe 030 aggregates
   from the phd-030 export
 - `.github/workflows/memoir.yml`: CI render and GitHub Pages deploy
@@ -58,3 +63,5 @@ drive:
   from public-safe aggregate RDS exported from phd-030
 - 2026-10-14 AGENTS.md merged into a short CLAUDE.md (AGENTS.md is a
   symlink)
+- 2026-10-23 phd-041 call page added (`041-zduvodnovani-z-pramenu.Rmd`);
+  not built locally (no R on the Mac), CI renders on push
