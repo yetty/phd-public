@@ -39,3 +39,13 @@ jak-to-bude-probíhat
 proč-je-to-zajímavé
 co-za-to-dostanu
 chci-se-zapojit
+spoluprace
+spoluprace-kontakt
+spoluprace-skola
+spoluprace-rocniky
+spoluprace-zpusob
+spoluprace-frekvence
+mysleni-nahlas
+spoluprace-poznamka
+spoluprace-ukonceni
+spoluprace-udaje
