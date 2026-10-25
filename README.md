@@ -65,3 +65,7 @@ drive:
   symlink)
 - 2026-10-23 phd-041 call page added (`041-zduvodnovani-z-pramenu.Rmd`);
   not built locally (no R on the Mac), CI renders on push
+- 2026-10-25 teacher collaboration page added
+  (`090-spoluprace-s-uciteli.Rmd`, `spoluprace.html`): explains the
+  TestTool preference fields, one anchor per field for the help links of
+  test-tool #326; not built locally (no bookdown), CI renders on push
